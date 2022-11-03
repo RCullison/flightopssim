@@ -1,0 +1,42 @@
+{
+  "isImperialUnits": false,
+  "permittedTaskTypes": {
+    "Route": true,
+    "Point": true,
+    "WASP": true,
+    "Dynamic": true,
+    "Security": true,
+    "Shipping": true,
+    "ShipWithoutLanding": false,
+    "DeliveryPoint": true,
+    "TargetTracking": true
+  },
+  "mapSourceURL": [
+    {
+      "url": "http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}",
+      "name": "Google Map",
+      "index": 0
+    },
+    {
+      "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+      "name": "Bing map",
+      "index": 1
+    },
+    {
+      "url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+      "name": "OpenStreet Map",
+      "index": 2
+    }],
+  "mapSourceURLWms": "http://18.135.80.62:8080/geoserver/simplex/wms",
+  "isWMSInclude": false,
+  "mapDefaultPosition": {
+    "lat": 32.032637,
+    "lon": 34.807091
+  },
+  "mapMinZoom": 3,
+  "mapMaxZoom": 20,
+  "mapMaxZoomWMS": 23,
+  "mapZoom": 16,
+  "isLogo": false,
+  "logoName": "security.png"
+}

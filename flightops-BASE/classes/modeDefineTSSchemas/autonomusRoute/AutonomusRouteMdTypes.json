@@ -1,0 +1,9 @@
+{
+  "styles": {
+    "colorPolyline": true,
+    "colorCircle": true,
+    "dashArr": true,
+    "weight": true,
+    "type": true
+  }
+}

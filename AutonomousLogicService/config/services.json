@@ -1,0 +1,48 @@
+{
+  "DTMS": {
+    "port": "9999",
+    "host": "52.56.202.148",
+    "protocol": "http",
+    "resolution": 200
+  },
+  "onboard": {
+    "port": "7705",
+    "host": "localhost",
+    "protocol": "http",
+    "SocketServerPort4ExternalOBServices": 7709
+  },
+  "ExtServer": {
+    "port": "7863",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "SMS": {
+    "port": "7764",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "logServer": {
+    "port": "7704",
+    "host": "localhost",
+    "protocol": "http",
+    "room": "logRoom",
+    "mongo": {
+      "db": "logs",
+      "url": "mongodb://localhost:27017/",
+      "col": "col"
+    }
+  },
+  "commandService": {
+    "port": "8400",
+    "host": "localhost",
+    "protocol": "http",
+    "serverUDP": 8401
+  },
+
+  "ALS": {
+    "port": "7706",
+    "host": "localhost",
+    "protocol": "http",
+    "serverUDP": 8402
+  }
+}

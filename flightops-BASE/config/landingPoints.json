@@ -1,0 +1,60 @@
+{
+  "emergencyPoints": [
+    {
+      "id": "emergency_id_1",
+      "location": {
+        "longitude": 34.94397,
+        "latitude": 32.4433,
+        "altitude": 5
+      },
+      "landingSurfaceHeight": 2,
+      "name": "Emergency 1"
+    },
+    {
+      "id": "qozzjbdi",
+      "location": {
+        "longitude": 34.815008640289314,
+        "latitude": 32.0338372154108,
+        "altitude": 24
+      },
+      "name": "aaa_emergency",
+      "landingSurfaceHeight": 0
+    }
+  ],
+  "landingPoints": [
+    {
+      "id": "landing_id_1",
+      "location": {
+        "longitude": 34.94283,
+        "latitude": 32.4433,
+        "altitude": 100
+      },
+      "landingSurfaceHeight": 2,
+      "name": "Landing 1",
+      "emergencyPointId": "emergency_id_1"
+    },
+    {
+      "id": "uvuqmra",
+      "location": {
+        "longitude": 34.815459251403816,
+        "latitude": 32.0364202185531,
+        "altitude": 24
+      },
+      "name": "aaa",
+      "landingSurfaceHeight": 0,
+      "emergencyPointId": "qozzjbdi"
+    }
+  ],
+  "spareLandingPoints": [
+    {
+      "id": "spare_id_1",
+      "location": {
+        "longitude": 34.936579,
+        "latitude": 32.444228,
+        "altitude": 5
+      },
+      "landingSurfaceHeight": 2,
+      "name": "Spare 1"
+    }
+  ]
+}

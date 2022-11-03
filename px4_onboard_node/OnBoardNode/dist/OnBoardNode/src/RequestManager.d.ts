@@ -1,0 +1,30 @@
+import { ASYNC_RESPONSE } from "./../../classes/typings/all.typings";
+import { ALS_API, CAS_API, CS_API, MOVE_XY_API, OPG_API } from "../../classes/dataClasses/api/api_enums";
+export declare class RequestManager {
+    private static instance;
+    private projConf;
+    private listen;
+    requestCASService: (path: CAS_API, bodyObj: Object) => Promise<ASYNC_RESPONSE>;
+    requestMOVE_XY: (path: MOVE_XY_API, bodyObj: Object) => Promise<ASYNC_RESPONSE>;
+    requestCS: (path: CS_API, bodyObj: Object) => Promise<ASYNC_RESPONSE>;
+    requestALS: (path: ALS_API, bodyObj: Object) => Promise<ASYNC_RESPONSE>;
+    requestOPG: (path: OPG_API, bodyObj: Object) => Promise<ASYNC_RESPONSE>;
+    requestDTMS: (path: string, bodyObj: Object) => Promise<any>;
+    requestToRouteService: (path: string, bodyObj?: Object) => Promise<ASYNC_RESPONSE>;
+    requestToRequestService: (path: string, bodyObj?: Object) => Promise<ASYNC_RESPONSE>;
+    requestToPX4Service: (path: string, bodyObj?: Object) => Promise<ASYNC_RESPONSE>;
+    sendRestRequest(url: string, path: string, bodyObj: Object, timeout?: number): Promise<ASYNC_RESPONSE>;
+    private validURL;
+    requestToVisualLandingService: (path: string, bodyObj?: Object) => Promise<ASYNC_RESPONSE>;
+    static listen: (projConf: any) => void;
+    static requestToRouteService: (path: string, bodyObj?: Object) => Promise<ASYNC_RESPONSE>;
+    static requestToRequestService: (path: string, bodyObj?: Object) => Promise<ASYNC_RESPONSE>;
+    static requestToPX4Service: (path: string, bodyObj?: Object) => Promise<ASYNC_RESPONSE>;
+    static requestToVisualLandingService: (path: string, bodyObj?: Object) => Promise<ASYNC_RESPONSE>;
+    static requestCS: (path: CS_API, bodyObj: Object) => Promise<ASYNC_RESPONSE>;
+    static requestOPG: (path: OPG_API, bodyObj: Object) => Promise<ASYNC_RESPONSE>;
+    static requestDTMS: (path: string, bodyObj: Object) => Promise<any>;
+    static requestMOVE_XY: (path: MOVE_XY_API, bodyObj: Object) => Promise<ASYNC_RESPONSE>;
+    static requestALS: (path: ALS_API, bodyObj: Object) => Promise<ASYNC_RESPONSE>;
+    static requestCASService: (path: CAS_API, bodyObj: Object) => Promise<ASYNC_RESPONSE>;
+}

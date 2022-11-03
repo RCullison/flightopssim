@@ -1,0 +1,54 @@
+{
+  "title": "WASP_MISSION",
+  "type": "object",
+  "description": "The Wasp mission data",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Task name",
+      "example": "WASP_Mission_1"
+    },
+    "point": {
+      "title": "GeoPoint",
+      "type": "object",
+      "properties": {
+        "geometry": {
+          "type": "object",
+          "required": [
+            "type",
+            "coordinates"
+          ],
+          "properties": {
+            "type": {
+              "type": "string"
+            },
+            "coordinates": {
+              "type": "array",
+              "title": "POINT3D",
+              "minItems": 3,
+              "maxItems": 3,
+              "items": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      },
+      "required": [
+        "geometry"
+      ]
+    },
+    "waspAzimuth": {
+      "type": "number",
+      "description": "Task azimuth",
+      "minimum": 0,
+      "maximum": 359.99,
+      "example": 0
+    }
+  },
+  "required": [
+    "name",
+    "point",
+    "waspAzimuth"
+  ]
+}

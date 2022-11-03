@@ -1,0 +1,205 @@
+{
+  "operationalAlt": {
+    "altMin": 50,
+    "altMax": 600,
+    "altStep": 10,
+    "ASL_Max": 1000
+  },
+  "defaultDroneParameters": {
+    "defaultVelocityForFlyToInMetersPerSecond": 12,
+    "yaw": 0,
+    "airVehicleParameters": {
+      "dji": {
+        "energyForTakeOff": 2,
+        "rateOfClimb": 2,
+        "rateOfLanding": 3,
+        "energyPerSecondForClimb": 0.05,
+        "energyForChangeStatuses": 3,
+        "spareEnergy": 31,
+        "hotSwapSpare": 6,
+        "aloudDeltaBetweenCalcs": 0.1,
+        "defaultVelocityForFlyToInMetersPerSecond": 14,
+        "maxWaitingVelocityTime": 3,
+        "turnLegLength": 150,
+        "waitingVelocityMaxTimeSeconds": 10,
+        "stopVelocityTolerance": 2,
+        "NFZ_Factor": 5,
+        "slope": {
+          "min": -1,
+          "max": 1
+        },
+        "legRange": {
+          "min": 10,
+          "max": 2500
+        }
+      },
+      "alpha": {
+        "energyForTakeOff": 15,
+        "rateOfClimb": 1.2,
+        "rateOfLanding": 1.3,
+        "energyPerSecondForClimb": 0.1,
+        "energyForChangeStatuses": 3,
+        "spareEnergy": 20,
+        "hotSwapSpare": 3,
+        "aloudDeltaBetweenCalcs": 0.1,
+        "defaultVelocityForFlyToInMetersPerSecond": 8,
+        "maxWaitingVelocityTime": 30,
+        "turnLegLength": 300,
+        "waitingVelocityMaxTimeSeconds": 30,
+        "stopVelocityTolerance": 2,
+        "NFZ_Factor": 5,
+        "slope": {
+          "min": -0.3,
+          "max": 0.3
+        },
+        "legRange": {
+          "min": 10,
+          "max": 2500
+        }
+      },
+      "pixhawk": {
+        "energyForTakeOff": 2,
+        "rateOfClimb": 2,
+        "rateOfLanding": 3,
+        "energyPerSecondForClimb": 0.05,
+        "energyForChangeStatuses": 3,
+        "spareEnergy": 30,
+        "hotSwapSpare": 6,
+        "aloudDeltaBetweenCalcs": 0.1,
+        "defaultVelocityForFlyToInMetersPerSecond": 12,
+        "maxWaitingVelocityTime": 3,
+        "turnLegLength": 150,
+        "waitingVelocityMaxTimeSeconds": 10,
+        "stopVelocityTolerance": 2,
+        "NFZ_Factor": 5,
+        "slope": {
+          "min": -1,
+          "max": 1
+        },
+        "legRange": {
+          "min": 10,
+          "max": 2500
+        }
+      }
+    }
+  },
+  "defaultViewPointParameters": {
+    "distance": 50,
+    "azimuthToPoint": 0,
+    "minViewPointDistance": 30,
+    "maxViewPointDistance": 1000
+  },
+  "mapSquare": {
+    "pointXMin": 34.783358573913574,
+    "pointXMax": 34.815073013305664,
+    "pointYMin": 32.15105387306656,
+    "pointYMax": 32.173796240310864
+  },
+  "modeDefine": {
+    "types": [
+      {
+        "type": "DroneUi",
+        "schema": "DroneUiMDSchema",
+        "dataTypes": "MessagesMDDataTypes",
+        "endPointType": "Array"
+      }
+    ]
+  },
+  "schemas": "Schemas",
+  "commintMissionCheckingInterval": 60000,
+  "hostAndPortForCheckConnectionDS2Drones": "127.0.0.1:7700",
+  "intervalOfCheckingReachableService": 5000,
+  "hotPointPatternAngular_speed": 0.5,
+  "ThirdEyeMessages": {
+    "GimbalUp": "27",
+    "GimbalDown": "28",
+    "GimbalLeft": "29",
+    "GimbalRight": "30",
+    "ZoomIn": "66",
+    "ZoomOut": "65",
+    "AnalyticsStart": "31",
+    "AnalyticsStop": "32",
+    "Day": "14",
+    "Night": "13"
+  },
+  "OBMinEnergy": 30,
+  "waspRectangleSize": 500,
+  "loiterRadius": 200,
+  "preflightParameters": [
+    {
+      "barometerAlt": 250,
+      "bingoTime": 3600,
+      "c2RHEnergy": 30,
+      "gpsAlt": 250,
+      "groundLevel": 0,
+      "safetyAlt": 250
+    }
+  ],
+  "isGimbalFromCommandFCS": false,
+  "isNotCheckEnergyForRH": false,
+  "maxGwMessages": 100,
+  "visualLanding": {
+    "visualLandingTimeoutSecond": 1200,
+    "horizontalSpeed": 0.2,
+    "speedToEmergencyPoint": 1,
+    "visualMaxTolerance": 0.3,
+    "minAltitudeTolerance": 1,
+    "verticalSpeed": -1,
+    "startAltForVisualLanding": 10,
+    "minAltForVisualLanding": 1,
+    "maxVerticalSpeed": -2,
+    "headingRelativeNorth": 270,
+    "type": "irlock"
+  },
+  "accurateLanding": {
+    "horizontalSpeed": 0.5,
+    "accurateMaxTolerance": 1,
+    "minAltitudeTolerance": 1,
+    "verticalSpeed": -0.5,
+    "altOffset": 0,
+    "startAltForAccurateLanding": 15,
+    "minAltForAccurateLanding": 5,
+    "maxVerticalSpeed": -2
+  },
+  "normalLanding": {
+
+  },
+  "notActiveHeightTolerance": 30,
+  "sendIntervalMS": 1000,
+  "ESSG_tumeout": 3000,
+  "AGLParams": {
+    "isAGL": true,
+    "altDiff": 550,
+    "maxAltASL": 1000,
+    "slope": {
+      "min": -0.17632698070846498,
+      "max": 0.17632698070846498,
+      "maxSlopeDegree": 45
+    },
+    "maxSlope": 45
+  },
+  "timeToOnboardRHSec": 60,
+  "onboardRHAlt": 50,
+  "isAutoRH": false,
+  "aglFactorPercent": 10,
+  "isCreateTakeoffNFZ": true,
+  "isUseDynamicNFZ": false,
+  "flightWithoutDynamicNFZ": true,
+  "minDistBetweenRoutePoints": 5,
+  "emergencyRHHeight": 98,
+  "DTMMaxPoints": 10000,
+  "DTMMaxPointsTimeout": 10000,
+  "computeRouteIntervalFCS": 20000,
+  "computeClosestHome_WS": 10000,
+  "loger_timeout": 2000,
+  "timeToExternalConnect": 10000,
+  "routeService_timeout": 10000,
+  "checkTimeout": 10000,
+  "checkIfToChangeRouteInterval": 5000,
+  "noGPSMaxTimeout": 10000,
+  "safetyAltNoGPS": 100,
+  "modeProduction": true,
+  "description": {"systemServiceType": ["docker","pm2"],"systemServiceNames": [{"FCS": "FCS, flightops-BASE/back/FCS, flightops-base_fcs, ..."}]},
+  "systemServiceType": "docker",
+  "systemServiceNames": [{"FCS":"flightops-base_fcs"}]
+}

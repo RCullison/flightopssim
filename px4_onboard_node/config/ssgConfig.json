@@ -1,0 +1,23 @@
+{
+  "maxUint16": 65535,
+  "maxInt16": 32767,
+  "maxUint32": 4294967295,
+  "maxInt32": 2147483647,
+  "maxFloat": 340282300000000000000000000000000000000,
+  "maxUint8": 255,
+  "maxInt8": 127,
+  "compress_failed": "error",
+  "services": {
+    "SSG": "SSG",
+    "ESSG": "ESSG",
+    "SMS": "SMS"
+  },
+  "routes": {
+    "cropTelemetrySimulator": "/cropTelemetrySimulator"
+  },
+  "rock_7_communication": {
+    "imei": "300234010753370",
+    "username": "testUsername",
+    "password": "testPass"
+  }
+}

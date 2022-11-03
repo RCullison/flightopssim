@@ -1,0 +1,104 @@
+{
+  "title": "ROUTE_MISSION",
+  "type": "object",
+  "description": "The route mission data",
+  "properties": {
+    "routeMission": {
+      "type": "object",
+      "properties": {
+        "yaw": {
+          "type": "number",
+          "description": "UAV yaw related to body during flight if toBody field is True",
+          "minimum": 0,
+          "maximum": 359.99
+        },
+        "toBody": {
+          "type": "boolean",
+          "description": "Azimuth direction (body/north)"
+        },
+        "velocity": {
+          "type": "number",
+          "description": "UAV velocity in m/s during route (if not defined different at points of route)"
+        },
+        "actionOnRouteEnd": {
+          "type": "string",
+          "enum": [
+            "Loiter",
+            "Hold",
+            "Hover"
+          ],
+          "description": "Action when route ends"
+        },
+        "routePoints": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "title": "POINT_OF_ROUTE_DATA",
+            "type": "object",
+            "properties": {
+              "yaw": {
+                "type": "number"
+              },
+              "toBody": {
+                "type": "boolean"
+              },
+              "velocity": {
+                "type": "number"
+              },
+              "PointLocation": {
+                "title": "GeoPoint",
+                "type": "object",
+                "properties": {
+                  "geometry": {
+                    "type": "object",
+                    "required": [
+                      "type",
+                      "coordinates"
+                    ],
+                    "properties": {
+                      "type": {
+                        "type": "string"
+                      },
+                      "coordinates": {
+                        "type": "array",
+                        "title": "POINT3D",
+                        "minItems": 3,
+                        "maxItems": 3,
+                        "items": {
+                          "type": "number"
+                        }
+                      }
+                    }
+                  }
+                },
+                "required": [
+                  "geometry"
+                ]
+              }
+            },
+            "required": [
+              "yaw",
+              "toBody",
+              "velocity",
+              "PointLocation"
+            ]
+          }
+        }
+      },
+      "required": [
+        "yaw",
+        "toBody",
+        "velocity",
+        "actionOnRouteEnd",
+        "routePoints"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "description": "The mission name"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

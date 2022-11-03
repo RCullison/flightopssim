@@ -1,0 +1,97 @@
+{
+  "airVehiclesList": [
+    {
+      "ip": "localhost:34568",
+      "systemId": "av-001",
+      "isSimulated": false,
+      "sensorType": "Route",
+      "missionType": "Route",
+      "name": "localSim",
+      "callSign": "Visint",
+      "namespace": "flytos",
+      "type": "dji",
+      "takeoffToCorridorPoint": false,
+      "isExist": true,
+      "landingPointId": "landing_id_1",
+      "maxVelocity": 1,
+      "maxDeltaVelocityUp": 0.1,
+      "maxDeltaVelocityDown": 0.2,
+      "maxYawVelocity": 1,
+      "energyConsumption": 0.05,
+      "rateOfClimb": 1,
+      "energyPerSecondForClimb": 1,
+      "rateOfLanding": 1,
+      "failSafe": {
+        "RHBat": 20,
+        "LandBat": 18,
+        "EmergencyLandHeight": 10
+      },
+      "sensorId": "sim1",
+      "sensorIds": [
+        "WR1",
+        "sim1",
+        "camera5",
+        "asio1",
+        "winch1",
+        "thirdeye1"
+      ],
+      "droneModel": "Matrice600",
+      "maxMissionTime": 3600,
+      "taskTypes": {
+        "Route": true,
+        "Point": true,
+        "WASP": true,
+        "Dynamic": true,
+        "Security": true,
+        "Shipping": true,
+        "ShipWithoutLanding": true,
+        "DeliveryPoint": true,
+        "TargetTracking": true
+      },
+      "landingTypes": {
+        "optic": true,
+        "accurate": true,
+        "normal": true
+      },
+      "onboard": {
+        "port": "7705",
+        "serverUDP_telemetry": {
+          "port": 10000
+        },
+        "serverUDP_ack": {
+          "port": 10001
+        },
+        "serverUDP_response": {
+          "port": 10002
+        },
+        "serverUDP_requester": {
+          "port": 10003,
+          "host": "localhost"
+        },
+        "c": {
+          "reciever": {
+            "vectorSentToPort": 1976
+          },
+          "requester": {
+            "vectorPort": 1976,
+            "vectorIP": "192.168.1.3"
+          }
+        }
+      },
+      "landFixMinHeight": 20,
+      "landVerticalSpeed": 3,
+      "landHorizontalSpeed": 1,
+      "landHorizontalTolerance": 0.5,
+      "minAltFromLand": 8,
+      "isForce": false,
+      "operationalAlt": 50,
+      "minAltitude": 50,
+      "maxAltitude": 50,
+      "emergencyNetworkIds": {
+        "groundSender": "iridium_id_1",
+        "airSender": "iridium_id_2"
+      },
+      "landingPresetsId": "preset1"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "styles": {
+    "borderIconStyle": true,
+    "airVehicleIconColor": true,
+    "energyColor": true
+  }
+}

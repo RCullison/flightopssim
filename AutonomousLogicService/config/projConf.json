@@ -1,0 +1,116 @@
+{
+  "logLevel": "DEBUG",
+  "LogLevels": [
+    "DEBUG"
+  ],
+  "isProd": false,
+  "onBoardNodeJsService": {
+    "port": "7705",
+    "protocol": "http",
+    "host": "localhost",
+    "telemetryPort": "7705",
+    "serverUDP": 10000,
+    "timeOutREST": 10000,
+    "copterTypes": [
+      "Ardupilot",
+      "PX4"
+    ],
+    "copterType": "Ardupilot",
+    "serverUDP4FCS": 10011,
+    "requestServicePy": {
+      "portUDP": 10001,
+      "httpPort": 34568,
+      "protocol": "http",
+      "host": "localhost",
+      "keepAliveInterval": 1
+    },
+    "websocketRooms": {
+      "my": "my",
+      "my5hz": "my5hz",
+      "my10hz": "my10hz"
+    },
+    "websocketEmitters": "keepAlive",
+    "keepAliveInterval": 1000,
+    "rosTimeOut": 3,
+    "version": "Test-050319-0.1",
+    "minBattery4RH_ownerOnboard": 100,
+    "timeOut4ownerOnboardInSec": 20,
+    "tolerance": 2,
+    "velocityRTH": 10,
+    "forceRateInSec": 1,
+    "periodSendTelemetry": 1,
+    "periodCheckIfUpdateTrigger": 0.2,
+    "keepAliveTriggerTimeout": 5,
+    "triggerValueToleranceFactor": 1.5,
+    "ranges": [
+      2,
+      2.5,
+      3,
+      3.5,
+      5,
+      10,
+      1000
+    ],
+    "periodSetVelocity": 1,
+    "minDistanceDiff4SetVelocity": 10,
+    "minCurrentVelocity4CheckWayPointComplex": 0.5,
+    "minHeightAboveTakeoff": 0.5,
+    "lastHomeFile": "lastHome.json",
+    "republishGimbalRateInSec": 5.0,
+    "isGimbalExist": true,
+    "isM100": false,
+    "isForcePublish": false,
+    "urlRouteServer": "http://localhost:7730",
+    "siteGetId": "site/getId",
+    "siteSet": "api/updateArea",
+    "routeCompute": "route/compute",
+    "checkStateInterval": 500,
+    "geofence": {
+      "maxRadius": 10000,
+      "maxAltitude": 10000
+    },
+    "arriveToPointTolerance": 3,
+    "reachedOperHeightTolerace": 3,
+    "toleranceHeadingRotation": 2,
+    "joystickMaxVelocity": 12,
+    "joystickMaxThrottle": 3,
+    "joystickMaxAngle": 30,
+    "visualLanding": {
+      "timeOutAction": 3000,
+      "firstRadiusCorrection": 1,
+      "timeOutVL": 20000,
+      "timeOutGeneral": 150000,
+      "fromCenter2Camera": 0.15,
+      "minVelolocityForPicture": 0.5,
+      "timeOutForPicture": 5000
+    },
+    "maxVerticalSpeed": 1.5,
+    "isIgnoreArmTakeOff": false,
+    "isSaveTelemetry": false,
+    "tmpDropAlt": 3,
+    "accurateLandingDistanceTolerance": 10
+  },
+  "onboardPX4": {
+    "port": "34568",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "logServer": {
+    "port": "7714",
+    "host": "localhost",
+    "protocol": "http",
+    "room": "logRoom",
+    "periodForSavingLogsInHours": 48,
+    "mongo": {
+      "db": "logs",
+      "url": "mongodb://localhost:27017/",
+      "col": "colPX4"
+    }
+  },
+  "fileName": "homes",
+  "uniqueKey4RTHRequests": "sdsdtjit3wtgajitup",
+  "uniqueKey4JoystickRequests": "bsDodXBfV5YRGOxl",
+  "maxTimeOutDontChangeStatusArmInSec": 2,
+  "checkInterval": 1000,
+  "actionMaxTimeout_ms": 1200000
+}

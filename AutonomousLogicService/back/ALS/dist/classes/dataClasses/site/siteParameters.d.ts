@@ -1,0 +1,43 @@
+import { ID_TYPE, NFZ_DATA, POINT, SITE_ROUTE_SERVICE, SITE_TO_SAVE } from '../../typings/all.typings';
+import { Nfz } from './nfz';
+export declare class SiteParameters {
+    perimeter: POINT[];
+    NFZ_array: Nfz[];
+    private id;
+    northWest: POINT;
+    southWEST: POINT;
+    northEast: POINT;
+    matrixNFZSafetyFactor: boolean[][];
+    matrixNFZ: boolean[][];
+    flyPolygon: any;
+    inverseFlyPolygon: any;
+    cellSize: POINT;
+    constructor(data?: any);
+    private setId;
+    private setPerimeterPRIVATE;
+    private setNorthWestPRIVATE;
+    private setNFZ_arrayPRIVATE;
+    private setFlyPolygonPRIVATE;
+    private setInverseFlyPolygonPRIVATE;
+    private setValuesPRIVATE;
+    private updatePRIVATE;
+    private toJsonForRouteServicePRIVATE;
+    private toJsonForSaveToFilePRIVATE;
+    saveConfig: {
+        perimeter: (data: POINT[]) => void;
+        NFZ_array: (data: NFZ_DATA[]) => void;
+        northWest: (data: any) => void;
+        flyPolygon: (data: any) => void;
+        inverseFlyPolygon: (data: any) => void;
+        id: (value: ID_TYPE) => void;
+    };
+    toJsonForSaveToFile: () => SITE_TO_SAVE;
+    toJsonForRouteService: () => SITE_ROUTE_SERVICE;
+    setValues: (data: any, saveConfig?: Object) => void;
+    update: (data: Object) => void;
+    setInverseFlyPolygon: (data: any) => void;
+    setFlyPolygon: (data: any) => void;
+    setNFZ_array: (data: NFZ_DATA[]) => void;
+    setNorthWest: (data: any) => void;
+    setPerimeter: (data: POINT[]) => void;
+}

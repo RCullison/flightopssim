@@ -1,0 +1,104 @@
+{
+  "2022-11-03T06:25:35+00:00": {
+    "level": "INFO",
+    "className": "SocketServer",
+    "funcName": "listen",
+    "data": {
+      "message": "Running WebSocket server on port: 7709"
+    }
+  }
+}
+{
+  "2022-11-03T06:25:35+00:00": {
+    "level": "CRITICAL",
+    "className": "-----------",
+    "funcName": "DISARMED",
+    "data": {}
+  }
+}
+{
+  "2022-11-03T06:25:35+00:00": {
+    "level": "INFO",
+    "className": "-----------",
+    "funcName": "flightMode: MODE_STABILIZE",
+    "data": ""
+  }
+}
+{
+  "2022-11-03T06:45:25+00:00": {
+    "level": "INFO",
+    "className": "SocketServer",
+    "funcName": "listen",
+    "data": {
+      "message": "Running WebSocket server on port: 7709"
+    }
+  }
+}
+{
+  "2022-11-03T06:45:25+00:00": {
+    "level": "CRITICAL",
+    "className": "-----------",
+    "funcName": "DISARMED",
+    "data": {}
+  }
+}
+{
+  "2022-11-03T06:45:25+00:00": {
+    "level": "INFO",
+    "className": "-----------",
+    "funcName": "flightMode: MODE_STABILIZE",
+    "data": ""
+  }
+}
+{
+  "2022-11-03T06:45:56+00:00": {
+    "level": "INFO",
+    "className": "SocketServer",
+    "funcName": "listen",
+    "data": {
+      "message": "Running WebSocket server on port: 7709"
+    }
+  }
+}
+{
+  "2022-11-03T06:45:56+00:00": {
+    "level": "CRITICAL",
+    "className": "-----------",
+    "funcName": "DISARMED",
+    "data": {}
+  }
+}
+{
+  "2022-11-03T06:45:56+00:00": {
+    "level": "INFO",
+    "className": "-----------",
+    "funcName": "flightMode: MODE_STABILIZE",
+    "data": ""
+  }
+}
+{
+  "2022-11-03T16:02:05+00:00": {
+    "level": "INFO",
+    "className": "SocketServer",
+    "funcName": "listen",
+    "data": {
+      "message": "Running WebSocket server on port: 7709"
+    }
+  }
+}
+{
+  "2022-11-03T16:02:05+00:00": {
+    "level": "CRITICAL",
+    "className": "-----------",
+    "funcName": "DISARMED",
+    "data": {}
+  }
+}
+{
+  "2022-11-03T16:02:05+00:00": {
+    "level": "INFO",
+    "className": "-----------",
+    "funcName": "flightMode: MODE_STABILIZE",
+    "data": ""
+  }
+}

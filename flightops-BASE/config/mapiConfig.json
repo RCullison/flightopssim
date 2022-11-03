@@ -1,0 +1,10 @@
+{
+  "sendAirVehiclesInterval": 1000,
+  "sendMissionsInterval": 3000,
+  "sendSiteVersionInterval": 1000,
+  "sendWinchesInterval": 1000,
+  "sendGimbalsInterval": 1000,
+  "sendUserMessagesInterval": 1000,
+  "maxGwMessagesMAPI": 100,
+    "pathsAuthManual": false
+}

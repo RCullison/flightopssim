@@ -1,0 +1,5 @@
+{
+  "timeOutREST_OfResponseFromDrone": 15000,
+  "locationSimulator": true,
+  "isChimera": true
+}

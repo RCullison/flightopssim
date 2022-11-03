@@ -1,0 +1,39 @@
+{
+  "styles": {
+    "droneIcon": false,
+    "airVehicleIconColor": true,
+    "airVehicleIcon": true,
+    "droneIconBackgroundColor": false,
+    "droneIconColor": false,
+    "typeIcon": true,
+    "externalOwner": true,
+
+    "gpsColor": true,
+    "energyColor": false,
+    "energyIcon": true,
+    "statusColor": true,
+    "circleColor": false,
+    "missionLineColor": true,
+    "actionManualEnable": true,
+    "actionAutoEnable": true,
+    "showVideo": true,
+    "buttonIcon": true,
+    "buttonText": true,
+    "selectedMode": true,
+    "onBoardColor": true,
+    "flytbaseColor": true,
+    "networkColor": true,
+    "commintSensorStatusColor":true,
+    "commintSensorStatusText":true,
+    "altChangePossible":true,
+    "wayPointsActionText": true,
+    "wayPointsActionButtonEnable":true,
+    "releaseTaskText": true,
+    "releaseTaskButtonEnable": true,
+    "borderStyle": true,
+    "borderIconStyle": true,
+
+    "lineColor": true,
+    "lineWidth": true
+  }
+}

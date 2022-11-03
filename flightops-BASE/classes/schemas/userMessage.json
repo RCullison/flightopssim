@@ -1,0 +1,33 @@
+{
+  "title": "userMessage",
+  "type": "object",
+  "description": "A message sent for the user to see. No logic will be made except from showing the text",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Can be use to define if resending same message again and again so the user will see no change in display"
+    },
+    "severity": {
+      "type": "string",
+      "description": "Will determine the message appearence - info, warning or Error",
+      "enum": [
+        "info",
+        "warning",
+        "error",
+        "success"
+      ]
+    },
+    "message": {
+      "type": "string",
+      "description": "The message the user will see "
+    },
+    "externalSystemName": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "severity",
+    "message",
+    "externalSystemName"
+  ]
+}

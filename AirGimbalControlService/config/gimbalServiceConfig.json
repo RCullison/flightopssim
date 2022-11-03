@@ -1,0 +1,19 @@
+{
+  "sendInterval": 100,
+  "websocketRooms": [
+    "gimbalService_ws"
+  ],
+  "websocketRoomsObj": {
+    "gimbalService_ws": "gimbalService_ws"
+  },
+
+  "gimbalConstants": {
+    "yaw180": -88,
+    "pitchMin": -90,
+    "pitchMax": 30,
+    "yawCoefficient": 1,
+    "pitchCoefficient": 1,
+    "maxVelocityPitch": 5,
+    "maxVelocityYaw": 20
+  }
+}

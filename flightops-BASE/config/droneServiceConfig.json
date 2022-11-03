@@ -1,0 +1,38 @@
+{
+  "websocketRooms": [
+    "droneService_ws",
+    "ws_droneService_velocity",
+    "ws_droneService_camera",
+    "ws_droneService_setPosition",
+    "winch_room",
+    "ws_fcsMessage",
+    "ws_fcsLoad"
+  ],
+  "websocketRoomsObj": {
+    "droneService_ws": "droneService_ws",
+    "ws_droneService_velocity": "ws_droneService_velocity",
+    "ws_droneService_camera": " ws_droneService_camera",
+    "ws_droneService_setPosition": "ws_droneService_setPosition"
+  },
+  "poolInterval": 5000,
+  "pushInterval": 500,
+  "poolIntervalCheckIsOn": 5000,
+  "timeOutREST_OfResponseFromDrone": 40000,
+  "maxCountRetry": 2,
+  "retryDelay": 500,
+  "maxCountDroneDisconnectedAfterExternalGoHome": 5,
+  "toleranceDefault": 1,
+  "toleranceVelocity": 0.1,
+  "minVelocityAsStopped": 0.15,
+  "nearestPointForWayPointInMeters": 5,
+  "MaxVelocityForFlyToInMetersPerSecond": 13,
+  "corridorSemiLength": 30,
+  "corridorAzimuth": 245,
+  "energyForCorridor": 20,
+  "useCorridorDistance": 3,
+  "largerEnergyConsumptionCoefficient": 1.5,
+  "isTestEnergy": true,
+  "energyPerSecond": 0.05,
+  "energyFactor": 350,
+  "heightToleranceForNotActive": 30
+}

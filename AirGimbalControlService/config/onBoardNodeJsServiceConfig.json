@@ -1,0 +1,16 @@
+{
+  "websocketRooms": {
+    "my": "my"
+  },
+  "websocketEmitters": "keepAlive",
+  "keepAliveInterval": 1000,
+  "landHeight": 50,
+  "waitingTimeOutAck": 2000,
+  "waitingTimeOutResp": 2000,
+  "bingoTime": 3600,
+  "lulTime": 15,
+  "sendTelemetry": 1,
+  "headingTakeoff": 110,
+  "maxTimeWaitChangeModeTakeOff": 45
+
+}

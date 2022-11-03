@@ -1,0 +1,32 @@
+{
+  "Gimbal": [
+    {
+      "gimbalPresetsId": "preset0",
+      "isNeedGimbalChange": false,
+      "gimbalPitchAngle": 0,
+      "gimbalYawAngle": 0,
+      "relative": "Body"
+    },
+    {
+      "gimbalPresetsId": "preset1",
+      "isNeedGimbalChange": true,
+      "gimbalPitchAngle": -90,
+      "gimbalYawAngle": -90,
+      "relative": "North"
+    },
+    {
+      "gimbalPresetsId": "preset2",
+      "isNeedGimbalChange": true,
+      "gimbalPitchAngle": -45,
+      "gimbalYawAngle": 90,
+      "relative": "North"
+    },
+    {
+      "gimbalPresetsId": "preset3",
+      "isNeedGimbalChange": true,
+      "gimbalPitchAngle": -70,
+      "gimbalYawAngle": 0,
+      "relative": "North"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "title": "SHIP_WITHOUT_LANDING_MISSION",
+  "description": "The ship without land mission data is acctually the point where the drone will start descending and at the altitude above ground defined on configuration will start ascending back to operational alt and then return home",
+  "allOf": [
+    {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Mission name"
+        },
+        "point": {
+          "title": "GeoPoint",
+          "type": "object",
+          "properties": {
+            "geometry": {
+              "type": "object",
+              "required": [
+                "type",
+                "coordinates"
+              ],
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "coordinates": {
+                  "type": "array",
+                  "title": "POINT3D",
+                  "minItems": 3,
+                  "maxItems": 3,
+                  "items": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          },
+          "required": [
+            "geometry"
+          ]
+        },
+        "containerHeight": {
+          "type": "number",
+          "description": "Container height. if not enterd it will be taken from configuration"
+        },
+        "heightAboveContainerForDrop": {
+          "type": "number",
+          "description": "AV height above Container. if not enterd it will be taken from configuration"
+        },
+        "forceByRoute": {
+          "type": "array",
+          "title": "FORCE_BY_ROUTE",
+          "minItems": 2,
+          "description": "Forces the uav to go through a static part in a dynamically created route. Order = array indexes. If height is not added, uses operational alt. Only possible if route is not AGL.",
+          "items": {
+            "anyOf": [
+              {
+                "type": "array",
+                "title": "POINT",
+                "minItems": 2,
+                "maxItems": 2,
+                "items": {
+                  "type": "number",
+                  "minimum": -180,
+                  "maximum": 180
+                }
+              },
+              {
+                "type": "array",
+                "title": "POINT3D",
+                "minItems": 3,
+                "maxItems": 3,
+                "items": {
+                  "type": "number"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "required": [
+        "name",
+        "point"
+      ]
+    },
+    {
+      "title": "AGL_PARAMS",
+      "type": "object",
+      "properties": {
+        "isAGL": {
+          "type": "boolean"
+        },
+        "altitudeRange": {
+          "type": "object",
+          "properties": {
+            "min": {
+              "type": "number"
+            },
+            "max": {
+              "type": "number"
+            }
+          }
+        },
+        "maxAltASL": {
+          "type": "number"
+        },
+        "slope": {
+          "type": "object",
+          "properties": {
+            "min": {
+              "type": "number",
+              "minimum": -1,
+              "maximum": 1
+            },
+            "max": {
+              "type": "number",
+              "minimum": -1,
+              "maximum": 1
+            }
+          }
+        }
+      }
+    }
+  ]
+}

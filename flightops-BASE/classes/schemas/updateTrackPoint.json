@@ -1,0 +1,50 @@
+{
+  "content": {
+    "application/json": {
+      "schema": {
+        "type": "object",
+        "properties": {
+          "missionID": {
+            "type": "string",
+            "description": "The mission id to update"
+          },
+          "trackPointLocation": {
+            "title": "GEOPOINT3D",
+            "type": "object",
+            "x-examples": {},
+            "description": "Lat lon and altitude of point ASL",
+            "properties": {
+              "latitude": {
+                "type": "number",
+                "example": 34.81,
+                "minimum": -90,
+                "maximum": 90
+              },
+              "longitude": {
+                "type": "number",
+                "minimum": -180,
+                "maximum": 180,
+                "example": 32.161
+              },
+              "altitude": {
+                "type": "number",
+                "example": 50,
+                "default": 0
+              }
+            },
+            "required": [
+              "latitude",
+              "longitude",
+              "altitude"
+            ]
+          }
+        },
+        "required": [
+          "missionID",
+          "trackPointLocation"
+        ]
+      }
+    }
+  },
+  "description": "The dynamic point new location"
+}

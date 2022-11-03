@@ -1,0 +1,51 @@
+{
+  "title": "DYNAMIC_POINT_MISSION",
+  "type": "object",
+  "description": "The target point to follow by air vhicle and gimbal",
+  "properties": {
+    "dynamicPointLocation": {
+      "title": "GEOPOINT3D",
+      "type": "object",
+      "description": "Lat lon and altitude of point ASL",
+      "properties": {
+        "latitude": {
+          "type": "number",
+          "example": 34.81,
+          "minimum": -90,
+          "maximum": 90
+        },
+        "longitude": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180,
+          "example": 32.161
+        },
+        "altitude": {
+          "type": "number",
+          "example": 50,
+          "default": 0
+        }
+      },
+      "required": [
+        "latitude",
+        "longitude",
+        "altitude"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "distanceToDynamicPoint": {
+      "type": "number",
+      "description": "The distance the drone will observe the target. If field was not sent - deafault config will be taken"
+    },
+    "isNoGPS": {
+      "type": "boolean",
+      "description": "Is mission without GPS"
+    }
+  },
+  "required": [
+    "dynamicPointLocation",
+    "name"
+  ]
+}

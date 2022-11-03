@@ -1,0 +1,47 @@
+import { BODY_ANGLES, EXTERNAL_AIR_VEHICLE_STYLES, GEOPOINT_SHORT, GIMBAL_ANGLES, MAPI_DRONE_TELEMETRY, MAPI_DRONE_TELEMETRY_UI, YXZ } from "../../typings/all.typings";
+import { DAY_NIGHT, VEHICLE_TYPE } from '../../typings/enums';
+export declare class ExternalAirVehicle {
+    droneId: string;
+    energy: number;
+    creationTimestamp?: number;
+    location?: GEOPOINT_SHORT;
+    altASL: number;
+    heading?: number;
+    gimbalAngles?: GIMBAL_ANGLES;
+    velocity?: YXZ;
+    bodyAngles?: BODY_ANGLES;
+    accelerations?: YXZ;
+    barometrucAltASL?: number;
+    GnssAltASL?: number;
+    cameraMode?: DAY_NIGHT;
+    cameraZoom?: number;
+    armed: boolean;
+    lastUpdate: number;
+    vehicleType?: VEHICLE_TYPE;
+    callSign?: string;
+    styles: EXTERNAL_AIR_VEHICLE_STYLES;
+    config: {
+        droneId: string;
+        energy: string;
+        creationTimestamp: string;
+        location: string;
+        altASL: string;
+        heading: string;
+        gimbalAngles: string;
+        velocity: string;
+        bodyAngles: string;
+        accelerations: string;
+        barometrucAltASL: string;
+        GnssAltASL: string;
+        cameraMode: string;
+        cameraZoom: string;
+        armed: string;
+        lastUpdate: string;
+        vehicleType: string;
+        callSign: string;
+    };
+    constructor(drone: any);
+    update: (obj: MAPI_DRONE_TELEMETRY) => void;
+    updateModeDefine(drone: any, mdData: any): void;
+    toJsonForUI: () => MAPI_DRONE_TELEMETRY_UI;
+}

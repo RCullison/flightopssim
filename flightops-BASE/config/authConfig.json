@@ -1,0 +1,8 @@
+{
+    "auth_active": false,
+    "keycloakClientSecret_c2": "NmcUPzU3CUe1cVSgJoBQopJWMVzUiN6k",
+    "keycloakClientID_c2": "c2",
+    "keycloakClientSecret_mapi": "arvDQnavjft1oBDpuSfyhe8FeNFR4oIA",
+    "keycloakClientID_mapi": "mapi",
+    "keycloakRealm": "DEV1"
+}

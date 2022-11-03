@@ -1,0 +1,15 @@
+{
+  "defaultRouteParameters": {
+    "cellSizeMeter": 10,
+    "safetyFactor": 10
+  },
+  "heightRange": {
+    "min": -400,
+    "max": 1500
+  },
+  "heightResolution": 10,
+  "marginFromStraightLine": 1000,
+  "maxMatrixSize": 8000000,
+  "resolutionDTM": 200
+
+}

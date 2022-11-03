@@ -1,0 +1,38 @@
+import * as core from 'express-serve-static-core';
+import { IRest } from '../../../../../classes/dataClasses/interfaces/IRest';
+export declare class ApiManager implements IRest {
+    private static instance;
+    private constructor();
+    listen: (router: core.Router) => boolean;
+    private updateAreaZIP_3D;
+    private updateMatrixAndCartographic;
+    private computeRoute;
+    private computeRouteFollowTerrain;
+    private computeRouteFollowTerrain_floating;
+    private computeRouteTerrainFollowingFullPath;
+    private computeWithDirection;
+    private computeWithDirection_floating;
+    private findRoute_start_floating;
+    private findRoute_start_floating_forCircularRequestFCS;
+    private findRoute_start_floating_withDirection;
+    private findRoute_finish_floating;
+    private findRoute_finish_floating_withDirection;
+    private findRoute_finish_floating_followTerrain;
+    private findRoute_genery;
+    private findRoute_start_finish_floating;
+    private findRoute_start_finish_floating_withDirection;
+    private findRoute_with_static_part;
+    private findRoute_with_static_part_start_floating;
+    private findRoute_with_static_part_withGraph;
+    private findRoute_with_static_part_withGraph_start_floating;
+    private findRoute_static_part_graph_start_floating_on_dynamic;
+    private buildGraphFromRoute;
+    private cartographicToMatrix;
+    private isPointOutsideNFZ;
+    private addFollowTerrain;
+    private pointsStraightFilter;
+    private addCrossAllNfzPoints;
+    private getMatrixVersion;
+    routers: {};
+    static listen: (router: core.Router) => boolean;
+}

@@ -1,0 +1,15 @@
+{
+  "iridiums": [
+    {
+      "imei": "123456789012345",
+      "id": "iridium_id_1"
+    },
+    {
+      "imei": "300434065073870",
+      "id": "iridium_id_2"
+    }
+  ],
+  "firstConnectionTimeout": 10000,
+  "waitingForEmergencyConnectionTimeout": 60000,
+  "emergencyConnectionTimeout": 180000
+}

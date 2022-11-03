@@ -1,0 +1,183 @@
+{
+  "Sensors": [
+    {
+      "Sensor": {
+        "SensorId": "asio1",
+        "SensorType": "ASIO",
+        "SensorIP": "",
+        "VideoURL": "",
+        "FOV": 60
+      }
+    },
+    {
+      "Sensor": {
+        "SensorId": "asio2",
+        "SensorType": "ASIO",
+        "SensorIP": "",
+        "VideoURL": "",
+        "FOV": 60
+      }
+    },
+    {
+      "Sensor": {
+        "SensorId": "lidar1",
+        "SensorType": "Lidar",
+        "SensorIP": "",
+        "VideoURL": "",
+        "FOV": 60
+      }
+    },
+    {
+      "Sensor": {
+        "SensorId": "sim1",
+        "SensorType": "FPVCamera",
+        "SensorIP": "http://192.168.1.64:8701",
+        "VideoURL": "ws://10.10.12.167:8084",
+        "FOV": 60,
+        "cameraParameters": {
+          "matrixSize": {
+            "x": 24,
+            "y": 16
+          },
+          "lensFocalLength": 6
+        }
+      }
+    },
+    {
+      "Sensor": {
+        "SensorId": "sim2",
+        "SensorType": "FPVCamera",
+        "SensorIP": "http://192.168.1.64:8701",
+        "VideoURL": "ws://10.10.12.167:8084",
+        "FOV": 60,
+        "cameraParameters": {
+          "matrixSize": {
+            "x": 24,
+            "y": 16
+          },
+          "lensFocalLength": 6
+        }
+      }
+    },
+    {
+      "Sensor": {
+        "SensorId": "camera1",
+        "SensorType": "DPVCamera",
+        "SensorIP": "http://192.168.1.64:8701",
+        "VideoURL": "ws://prism2.halo.droneup.cloud:8082",
+        "FOV": 60
+      }
+    },
+    {
+      "Sensor": {
+        "SensorId": "camera3",
+        "SensorType": "DPVCamera",
+        "SensorIP": "http://192.168.1.64:8701",
+        "VideoURL": "ws://prism5.halo.droneup.cloud:8082",
+        "FOV": 60
+      }
+    },
+    {
+      "Sensor": {
+        "SensorId": "camera4",
+        "SensorType": "DPVCamera",
+        "SensorIP": "http://192.168.1.64:8701",
+        "VideoURL": "ws://prism5.halo.droneup.cloud:8082",
+        "FOV": 60
+      }
+    },
+    {
+      "Sensor": {
+        "SensorId": "camera5",
+        "SensorType": "DPVCamera",
+        "SensorIP": "http://192.168.1.64:8701",
+        "VideoURL": "ws://10.10.12.167:8082",
+        "FOV": 60,
+        "cameraParameters": {
+          "matrixSize": {
+            "x": 24,
+            "y": 16
+          },
+          "lensFocalLength": 6,
+          "parallax": {
+            "x": 80,
+            "y": 90
+          },
+          "maxCartesianFlyRequest": 20
+        }
+      }
+    },
+    {
+      "Sensor": {
+        "SensorId": "camera6",
+        "SensorType": "DPVCamera",
+        "SensorIP": "http://192.168.1.64:8701",
+        "VideoURL": "ws://prism1.halo.droneup.cloud:8082",
+        "FOV": 60
+      }
+    },
+    {
+      "Sensor": {
+        "SensorId": "winch1",
+        "SensorType": "Winch",
+        "SensorIP": "http://192.168.1.64:8701",
+        "VideoURL": "http://192.168.1.64:8701",
+        "FOV": 60
+      }
+    },
+    {
+      "Sensor": {
+        "SensorId": "winch2",
+        "SensorType": "Winch",
+        "SensorIP": "http://192.168.1.64:8701",
+        "VideoURL": "http://192.168.1.64:8701",
+        "FOV": 60
+      }
+    },
+    {
+      "Sensor": {
+        "SensorId": "winch3",
+        "SensorType": "Winch",
+        "SensorIP": "http://192.168.1.64:8701",
+        "VideoURL": "http://192.168.1.64:8701",
+        "FOV": 60
+      }
+    },
+    {
+      "Sensor": {
+        "SensorId": "WR1",
+        "SensorType": "wr"
+      }
+    },
+    {
+      "Sensor": {
+        "SensorId": "WR2",
+        "SensorType": "wr"
+      }
+    },
+    {
+      "Sensor": {
+        "SensorId": "IRLock1",
+        "SensorType": "irlock"
+      }
+    },
+    {
+      "Sensor": {
+        "SensorId": "thirdeye1",
+        "SensorType": "ThirdEye"
+      }
+    }
+  ],
+  "Gimbal": [
+    {
+      "sensorId": "sim1",
+      "gimbalType": "Dji",
+      "gimbalURL": "http://192.168.1.64:8701"
+    },
+    {
+      "sensorId": "sim2",
+      "gimbalType": "Dji",
+      "gimbalURL": "http://192.168.1.64:8701"
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "AGCS": {
+    "port": "8800",
+    "host": "localhost",
+    "protocol": "http",
+    "serverUDP": 11000
+  },
+  "DTMS": {
+    "port": "9999",
+    "host": "52.56.202.148",
+    "protocol": "http",
+    "resolution": 200
+  },
+  "onboard": {
+    "port": "7705",
+    "host": "localhost",
+    "protocol": "http",
+    "SocketServerPort4ExternalOBServices": 7709
+  },
+  "POWS": {
+    "port": "7863",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "routeService": {
+    "port": "7730",
+    "host": "localhost",
+    "protocol": "http",
+    "defaultMaxLegLength": 10000,
+    "defaultLastLegLength": 100
+  },
+  "AMS": {
+    "port": "7740",
+    "host": "localhost",
+    "protocol": "http",
+    "cartographicListeners": [
+      "webService",
+      "MAPI"
+    ],
+    "matrixListeners": [
+      "routeService",
+      "webService",
+      "droneService"
+    ]
+  },
+  "SSG": {
+    "port": "7761",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "ESSG": {
+    "port": "7762",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "ASG": {
+    "port": "7763",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "SMS": {
+    "port": "7764",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "logServer": {
+    "port": "7704",
+    "host": "localhost",
+    "protocol": "http",
+    "room": "logRoom",
+    "mongo": {
+      "db": "logs",
+      "url": "mongodb://localhost:27017/",
+      "col": "col"
+    }
+  },
+  "commandService": {
+    "port": "8400",
+    "host": "localhost",
+    "protocol": "http",
+    "serverUDP": 8401
+  },
+  "OPG": {
+    "port": "9707",
+    "host": "localhost",
+    "protocol": "http",
+    "serverUDP": 9708,
+    "sendDataInterval": 500,
+    "stopSendInterval": 5000,
+    "isLocationFromOnboard": false,
+    "isRunOnOboard": true,
+    "isSendLocationForDevelopment": true
+  },
+  "MOVE_XY": {
+    "port": "11113",
+    "host": "localhost",
+    "protocol": "http",
+    "path_start": "api/start",
+    "path_stop": "api/stop",
+    "serverUDP": 8401
+  },
+  "MOVE_XY_STATUS": {
+    "port": "8100",
+    "host": "localhost",
+    "protocol": "ws"
+  },
+  "ALS": {
+    "port": "7706",
+    "host": "localhost",
+    "protocol": "http",
+    "serverUDP": 8402
+  },
+  "UDP_SERVER_4_FDRONE": {
+    "port": "7715",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "CHIMERA": {
+    "port": "7100",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "CAS": {
+    "port": 7777,
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "lidarGW": {
+    "protocol": "http",
+    "port": 11111,
+    "udpPort": 10004,
+    "host": "127.0.0.1"
+  },
+  "IRLockService": {
+    "port": "11111",
+    "comment": "rest",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "gimbalGW_Service": {
+    "port": 7825,
+    "portUDP": 7512,
+    "host": "localhost",
+    "protocol": "http"
+  },
+
+
+
+  "gimbalGWService": {
+    "port": "7819",
+    "host": "localhost",
+    "protocol": "http"
+  }
+}

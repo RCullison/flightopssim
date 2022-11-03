@@ -1,0 +1,20 @@
+{
+  "changeAltitudeService":{
+    "port": 7777,
+    "protocol": "http",
+    "host": "localhost"
+  },
+
+  "onboardNode": {
+    "portUdpTelemetry": 7715,
+    "portUDP_joystickControl": 10011,
+    "port": 7705,
+    "protocol": "http",
+    "host": "localhost"
+  },
+  "lidarGW": {
+    "udpPort": 10004,
+    "host": "localhost"
+  }
+}
+

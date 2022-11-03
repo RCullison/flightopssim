@@ -1,0 +1,5 @@
+{
+  "velocityTolerance":  2,
+  "altitudeTolerance": 2,
+  "pointReachedTolerance": 5
+}

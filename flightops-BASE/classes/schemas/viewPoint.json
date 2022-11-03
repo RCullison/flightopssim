@@ -1,0 +1,57 @@
+{
+  "title": "POINT_MISSION",
+  "type": "object",
+  "description": "A mission of viewing point. During the drone flight to the point the drone camera will auto follow the point location",
+  "properties": {
+    "targetPoint": {
+      "title": "GEOPOINT3D",
+      "type": "object",
+      "description": "Lat lon and altitude of point ASL",
+      "properties": {
+        "latitude": {
+          "type": "number",
+          "example": 34.81,
+          "minimum": -90,
+          "maximum": 90
+        },
+        "longitude": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180,
+          "example": 32.161
+        },
+        "altitude": {
+          "type": "number",
+          "example": 50,
+          "default": 0
+        }
+      },
+      "required": [
+        "latitude",
+        "longitude",
+        "altitude"
+      ]
+    },
+    "azimuthToPoint": {
+      "description": "Constraint azimuth to point or leave to task to calculate",
+      "type": "boolean"
+    },
+    "viewingAngle": {
+      "description": "Viewing angle if azimuthToPoint is true",
+      "type": "number"
+    },
+    "distanceToTarget": {
+      "type": "number",
+      "description": "The distance the drone will observe the target on last point of flight.\nIf field was not sent - deafault config will be taken"
+    },
+    "isNoGPS": {
+      "type": "boolean",
+      "description": "Is mission without GPS"
+    }
+  },
+  "required": [
+    "targetPoint",
+    "azimuthToPoint",
+    "viewingAngle"
+  ]
+}

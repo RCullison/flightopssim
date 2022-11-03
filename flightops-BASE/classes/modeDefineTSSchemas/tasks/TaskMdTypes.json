@@ -1,0 +1,12 @@
+{
+  "styles": {
+    "borderColor": true,
+    "fillColor": true,
+    "colorStatusAV": true,
+    "colorStatusTask": true,
+    "textColorStatusAV": true,
+    "textColorStatusTask": true,
+    "colorStatusTaskList": true,
+    "colorWasp": true
+  }
+}

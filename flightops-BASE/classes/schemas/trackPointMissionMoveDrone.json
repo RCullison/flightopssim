@@ -1,0 +1,73 @@
+{
+  "content": {
+    "application/json": {
+      "schema": {
+        "type": "object",
+        "properties": {
+          "missionId": {
+            "type": "string",
+            "description": "The dynamicViewPoint missionId"
+          },
+          "requestedLocation": {
+            "title": "GEOPOINT3D",
+            "type": "object",
+            "description": "Lat lon and altitude of point ASL",
+            "properties": {
+              "latitude": {
+                "type": "number",
+                "example": 34.81,
+                "minimum": -90,
+                "maximum": 90
+              },
+              "longitude": {
+                "type": "number",
+                "minimum": -180,
+                "maximum": 180,
+                "example": 32.161
+              },
+              "altitude": {
+                "type": "number",
+                "example": 50,
+                "default": 0
+              }
+            },
+            "required": [
+              "latitude",
+              "longitude"
+            ]
+          },
+          "altitude": {
+            "type": "number",
+            "description": "The ASL altitude for drone flight\nIf not sent, then - will be used the current drone ASL height"
+          },
+          "headingTypeAtPoint": {
+            "type": "string",
+            "title": "headingType",
+            "description": "The type of heading for the drone.\nToGimbal - the drone heading will follow the gimbal yaw.\nTo Route - will head to the route last leg direction.\nSet - Manually defined",
+            "enum": [
+              "ToGimbal",
+              "ToRoute",
+              "Set"
+            ]
+          },
+          "setHeadingAtPoint": {
+            "type": "number",
+            "title": "heading",
+            "description": "Heading data type",
+            "minimum": 0,
+            "maximum": 360
+          },
+          "airVehicleId": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "missionId",
+          "requestedLocation",
+          "airVehicleId"
+        ]
+      }
+    }
+  },
+  "description": "The fly-to parameters. If the heading type will not be sent the parameters will be the mission defined parameters"
+}

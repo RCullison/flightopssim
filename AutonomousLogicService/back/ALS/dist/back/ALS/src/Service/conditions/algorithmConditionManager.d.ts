@@ -1,0 +1,40 @@
+import { ActionPoint } from '../../../../../classes/dataClasses/security/actionPoint';
+import { ACTION_KEY, CONDITION_STATUS, MAP } from '../../../../../classes/typings/all.typings';
+import { DistanceConditionLogic } from './conditionUtilities/distanceConditionLogic';
+import { GeneralConditionLogic } from './conditionUtilities/generalConditionLogic';
+import { TimeoutConditionLogic } from './conditionUtilities/timeoutConditionLogic';
+export declare class AlgorithmConditionManager {
+    private static instance;
+    relevantPoint: ActionPoint;
+    checkInterval: any;
+    conditionsStatuses: MAP<CONDITION_STATUS>;
+    allFinished: boolean;
+    conditionLogicConfig: {
+        general: GeneralConditionLogic;
+        timeout: TimeoutConditionLogic;
+        distance: DistanceConditionLogic;
+    };
+    private startCheckProcess;
+    private checkIntervalProcess;
+    private stopAllCheckProcess;
+    private getConditions;
+    private getCondition;
+    private setCondition;
+    private checkRelevantPoint;
+    private externalUpdate;
+    private findActionById;
+    private checkIsFinished;
+    private getIsFinished;
+    private getRelevantPointId;
+    private log;
+    static startCheckProcess: (_relevantPoint: ActionPoint) => boolean;
+    static stopAllCheckProcess: () => void;
+    static getCondition: (actionId: string) => CONDITION_STATUS;
+    static getConditions: () => MAP<CONDITION_STATUS>;
+    static checkIsFinished: () => boolean;
+    static getIsFinished: () => boolean;
+    static getRelevantPoint: () => ActionPoint;
+    static setCondition: (actionId: string, status: CONDITION_STATUS) => boolean;
+    static checkRelevantPoint: (pointId: string) => boolean;
+    static externalUpdate: (actionKey: ACTION_KEY, status?: CONDITION_STATUS) => boolean;
+}

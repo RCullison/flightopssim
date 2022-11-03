@@ -1,0 +1,12 @@
+{
+  "vz": 2,
+  "intervalSendingForce": 0.1,
+  "toleranceAltitude": 0.3,
+  "maxTimeWithoutLidar": 3,
+  "lidarMinHeight": 20,
+
+  "maxAccelerationUp": 0.6,
+  "maxAccelerationDown": -0.6,
+  "startToSlowUpDistance": 8,
+  "startToSlowDownDistance": 8
+}

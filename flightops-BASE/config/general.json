@@ -1,0 +1,8 @@
+{
+  "isProd": true,
+  "isUseDB_LDBS": true,
+  "siteAltitude": 0,
+  "is_Use_UTM": false,
+  "is_IgnoreRejectCollision": true,
+  "projectName": "flightOpsBase"
+}

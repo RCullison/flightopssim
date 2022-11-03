@@ -1,0 +1,21 @@
+{
+  "MoveXY": {
+    "protocol": "http",
+    "host": "localhost",
+    "port": 11113
+  },
+  "onboardNode": {
+    "protocol": "http",
+    "host": "localhost",
+    "udpPort": 8401,
+    "portUdpTelemetry": 7715,
+    "portUDP_joystickControl": 10011,
+    "SocketServerPort4ExternalOBServices": 7709
+  },
+
+  "clientSend": {
+    "protocol": "http",
+    "host": "localhost",
+    "udpPort": 10011
+  }
+}

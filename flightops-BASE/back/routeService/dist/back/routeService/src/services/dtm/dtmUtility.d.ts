@@ -1,0 +1,31 @@
+import { ASYNC_RESPONSE, CARTESIAN2, POINT_INDEXED, POINT3D, ALONG_GEOPOINT3D, POINT_ON_PATH_FOR_AGL, POINT, AGL_PARAMETERS, POINT_ON_PATH } from '../../../../../classes/typings/all.typings';
+export declare class DtmUtility {
+    private static instance;
+    constructor();
+    private prepareRequestObject;
+    private validateAndFixRoute3D;
+    private validateAndFixLeg;
+    private fixLeg;
+    private validateLeg;
+    private getPointsAltitude;
+    private findMaxHeightFromLauncherPoint;
+    private POINT3D_Arr_to_ALONG_POINT3D_Arr;
+    private convert_Arr_GEOPOINT3D_to_ALONG_GEOPOINT3D;
+    private convertPathToPathResolutionFull;
+    private addMissionHeight;
+    private validateAndFixRoute3D_and_convertToPOINTS;
+    private convertArr_POINT_INDEXED_to_CARESIAN2;
+    private convert_ALONG_GEOPOINT3D_Arr_to_CARESIAN2;
+    private convertArr_POINT_INDEXED_to_POINT3D;
+    private convertArr_POINT_ON_PATH_to_CARESIAN2;
+    private convertArr_ALONG_GEOPOINT3D_to_CARESIAN2;
+    private convert_Arr_ALONG_GEOPOINT3D_to_POINT_ON_PATH_arr;
+    private fixHeightOfPoints;
+    static convertArr_POINT_INDEXED_to_POINT3D: (path: POINT_INDEXED[]) => POINT3D[];
+    static convertArr_POINT_INDEXED_to_CARESIAN2: (path: POINT_INDEXED[]) => CARTESIAN2[];
+    static convert_ALONG_GEOPOINT3D_Arr_to_CARESIAN2: (path: ALONG_GEOPOINT3D[]) => CARTESIAN2[];
+    static convertPathToPathResolutionFull: (pathForCompute: (POINT_ON_PATH_FOR_AGL | POINT_ON_PATH)[], resolution: number, minLegRange?: number) => POINT_ON_PATH_FOR_AGL[];
+    static getPointsAltitude: (points: (POINT | POINT3D)[]) => Promise<ASYNC_RESPONSE<POINT3D[]>>;
+    static fixHeightOfPoints: (groundPath: POINT3D[], pointsWithHeight: POINT3D[], partOfPath_ForRequest: POINT_ON_PATH_FOR_AGL[], requestParameters: AGL_PARAMETERS) => ASYNC_RESPONSE<POINT_INDEXED[]>;
+    static POINT3D_Arr_to_ALONG_POINT3D_Arr: (pathWithDistance: POINT_ON_PATH_FOR_AGL[], pointsWithHeight: POINT3D[]) => ALONG_GEOPOINT3D[];
+}

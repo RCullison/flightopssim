@@ -1,0 +1,22 @@
+{
+  "matrixOrigin": "AMS",
+  "defaultRouteParameters": {
+    "cellSizeMeter": 50,
+    "safetyFactor": 5
+  },
+  "heightRange": {
+    "min": -430,
+    "max": 1500
+  },
+  "heightResolution": 10,
+  "lineForCheckPerimeterDegree": 4,
+  "lineForCheckPerimeterCellsNumber": 10000,
+  "marginFromStraightLine": 1000,
+  "maxMatrixSize": 5000000,
+  "heightFactor": 30,
+  "crossCorners": false,
+  "heightTolerance": 15,
+  "resolution": 100,
+  "nfzCircleSteps": 6
+
+}

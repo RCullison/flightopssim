@@ -1,0 +1,18 @@
+{
+  "apiKey_dev": "3c932c23-607c-4579-b2eb-fd76f176836a",
+  "ussId_dev": 3404202247634944,
+  "dsos_id": "a",
+  "dsos_password": "flightOpsPassword",
+
+
+  "apiKey_prod": "96a3d3f8-7720-4e19-9475-028a4afd99ed",
+  "ussId_prod": 3405639990878208,
+
+  "utm_rest_timeout": 15000,
+  "UTMG_sendInterval": 1000,
+  "UTM_Interval": 1000,
+  "origin_dev": "Airwayz",
+  "origin_prod": "Airwayz",
+  "droneDefaultSpeed": 12,
+  "isFilterCTR": true
+}

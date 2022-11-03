@@ -1,0 +1,32 @@
+import { ASYNC_RESPONSE, COMPUTE_ROUTE, COMPUTE_ROUTE_DIRECTION_REQUEST, COMPUTE_ROUTE_REQUEST, DTM_ROUTE_FULL_DATA } from '../../../../../classes/typings/all.typings';
+export declare class BypassReliefUtility {
+    private static instance;
+    private constructor();
+    private computeHeightASL;
+    private computeRouteBypassReliefRecursiveFunction;
+    private checkAndFixParameters;
+    private computeRouteTerrainFollowingFullPathRecursiveFunction;
+    private addFollowTerrain;
+    private ASL_to_ATP;
+    private computeRouteTerrainFollowingFullPathFloating_recursiveFunction;
+    private decrementRoute;
+    private computeRouteSecond;
+    private decrementMaxHeight;
+    private addHeight;
+    private heightValidation;
+    private computeDirectionRoute;
+    private convertToShirtLags;
+    private computeNewPointsForShirtLeg;
+    private simplifyPath_3D_newLogic;
+    private cartographicToMatrix;
+    private convertRouteToCartographic;
+    private pointsStraightFilter_CARTESIAN2;
+    private logStatus;
+    static computeRouteBypassReliefRecursiveFunction: (requestBody: COMPUTE_ROUTE_REQUEST, callback: Function, isNeedToRecompute: boolean, new_ASL_Max?: number) => void;
+    static computeRouteTerrainFollowingFullPathRecursiveFunction: (requestBody: COMPUTE_ROUTE_REQUEST, callback: Function, isNeedToRecompute: boolean, new_ASL_Max?: number) => void;
+    static computeRouteTerrainFollowingFullPathRecursiveFunction_floating: (requestBody: COMPUTE_ROUTE_REQUEST, callback: Function, isNeedToRecompute: boolean, new_ASL_Max?: number) => void;
+    static computeDirectionRoute: (pointsForRoute: COMPUTE_ROUTE_DIRECTION_REQUEST) => COMPUTE_ROUTE;
+    static decrementMaxHeight: (requestBody: COMPUTE_ROUTE_REQUEST) => number;
+    static addFollowTerrain: (requestBody: COMPUTE_ROUTE_DIRECTION_REQUEST, data: COMPUTE_ROUTE) => Promise<ASYNC_RESPONSE<DTM_ROUTE_FULL_DATA>>;
+    static computeHeightASL: (pointsForRoute: COMPUTE_ROUTE_REQUEST) => number;
+}

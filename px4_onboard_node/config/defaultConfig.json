@@ -1,0 +1,8 @@
+{
+  "defaultViewPointParameters": {
+    "distance": 50,
+    "azimuthToPoint": 0,
+    "minViewPointDistance": 30,
+    "maxViewPointDistance": 1000
+  }
+}

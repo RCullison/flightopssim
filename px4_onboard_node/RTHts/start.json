@@ -1,0 +1,32 @@
+{
+  "host": "localhost",
+  "telemetryPort": "7705",
+  "requestPort": "7705",
+  "timeout": 20,
+  "tolerance": 10,
+  "RTHtolerance": 1,
+  "minLength": 10,
+  "allowedId": "blank",
+  "hostRouteService": "localhost",
+  "requestPortRouteService": "7730",
+  "routeServicePath": "/api/computeRoute",
+  "routeServicePathAGL": "/api/computeRouteBaypassRelief",
+  "uniqueKey4RTHRequests": "sdsdtjit3wtgajitup",
+  "velocity": 8,
+  "isAGLTolerance":100,
+  "isAGLSpeedMinimalInTolerance": 0.5,
+
+  "timeoutHealthGPS": 20,
+  "toleranceHeadingRotation": 5,
+
+  "portUDPNode": 10011,
+  "hostUDPNode": "localhost",
+  "velocityRTHNoGps": 12,
+  "headingNoGPS": 90,
+  "timeFlightNoGPS": 25,
+  "distTolerance": 10,
+  "battery": 10,
+  "defaultEmergencyRHHeight": 100
+
+
+}

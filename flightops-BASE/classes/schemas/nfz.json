@@ -1,0 +1,43 @@
+{
+  "title": "NFZ",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "maxAlt": {
+      "type": "number",
+      "description": ""
+    },
+    "polygonPoints": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "array",
+        "title": "POINT3D",
+        "minItems": 3,
+        "maxItems": 3,
+        "items": {
+          "type": "number"
+        }
+      }
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "static",
+        "dynamic"
+      ],
+      "description": "Type of NFZ"
+    }
+  },
+  "required": [
+    "name",
+    "maxAlt",
+    "polygonPoints",
+    "type"
+  ]
+}

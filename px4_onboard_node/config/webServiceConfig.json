@@ -1,0 +1,31 @@
+{
+  "websocketRooms": [
+    "proxy_ui_droneData",
+    "proxy_ui_observationPoints",
+    "ui_proxy_setVelocity",
+    "ui_proxy_setCamera",
+    "ui_proxy_forceLocation",
+    "proxy_ui_forceLocation",
+    "proxy_ui_observationPointsData",
+    "proxy_ui_alert",
+    "proxy_ui_missionRoutePoints"
+  ],
+  "websocketOutTimeInterval": 100,
+  "timeOutREST_OfResponseFromDrone": 300000,
+  "timeOutREST_WS_to_FCS": 60000,
+  "timeOutREST": 10000,
+  "timeGapForEnergyConsumptionCalc": 30000,
+  "timeForCorridorAndLandingInSec": 60,
+  "rateOfClimb": 2,
+  "secret": "4sekgq3sns4l0dj9kmgukn",
+  "expireIn": 86400,
+  "name": "FlightOps",
+  "password": "FlightOps",
+  "heightStartAlertTolerance": 10,
+  "heightStopAlertTolerance": 7,
+  "droneSpareEnergyrouteAlgorithmParams": 25,
+  "energyForTakeOff": 15,
+  "semaphoreTimeoutSeconds": 40,
+  "semaphoreTimeoutCheckIntervalSec": 50
+}
+

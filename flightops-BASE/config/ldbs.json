@@ -1,0 +1,12 @@
+{
+
+  "timeStorageLogs": 180,
+  "maxStorageSize": 500,
+  "intervalCheckStorageSize": 864000,
+
+  "isPrintForTest": false,
+
+  "description4timeStorageLogs": "time for storage logs in sec, for example 86400 - match 1 calendar day",
+  "description4intervalCheckStorageSize": "864000 sec match 10 calendar days ",
+  "description4maxStorageSize": "in kB"
+}

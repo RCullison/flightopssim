@@ -1,0 +1,32 @@
+{
+  "AGCS": {
+    "port": "8800",
+    "host": "localhost",
+    "protocol": "http",
+    "resolution": 200,
+    "serverUDP": 11000
+  },
+  "logService": {
+    "port": "7722",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "onboardNode": {
+    "portUdpTelemetry": 7715,
+    "portUDP_joystickControl": 10011,
+    "port": 7705,
+    "protocol": "http",
+    "host": "localhost"
+  },
+  "DBS": {
+    "port": "7741",
+    "host": "localhost",
+    "protocol": "http",
+    "listeners": [],
+    "mongo": {
+      "db": "dbs",
+      "url": "mongodb://localhost:27017/",
+      "col": "col"
+    }
+  }
+}

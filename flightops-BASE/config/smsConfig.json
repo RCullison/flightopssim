@@ -1,0 +1,14 @@
+{
+  "notation": "C2",
+  "siteName": "TestV3",
+  "services": {
+    "webService": "webService",
+    "FCS": "droneService",
+    "AMS": "AMS",
+    "RS": "routeService",
+    "MAPI": "MAPI",
+    "DBS": "DBS"
+  },
+  "host": "localhost",
+  "numberOfLogs": 500
+}

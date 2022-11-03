@@ -1,0 +1,38 @@
+{
+  "content": {
+    "application/json": {
+      "schema": {
+        "type": "object",
+        "properties": {
+          "heading": {
+            "type": "number",
+            "title": "heading",
+            "description": "Heading data type",
+            "minimum": 0,
+            "maximum": 360
+          },
+          "missionId": {
+            "type": "string",
+            "description": "The track point mission id"
+          },
+          "airVehicleId": {
+            "title": "airVehicleId",
+            "type": "object",
+            "properties": {
+              "airVehicleId": {
+                "type": "string"
+              }
+            },
+            "description": ""
+          }
+        },
+        "required": [
+          "heading",
+          "missionId",
+          "airVehicleId"
+        ]
+      }
+    }
+  },
+  "description": "Define the heading relative to north "
+}

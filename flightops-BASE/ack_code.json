@@ -1,0 +1,312 @@
+[
+  {
+    "Mission Or Control Name": "Control Call",
+    "ACK Code": "0x00",
+    "Description": "Success"
+  },
+  {
+    "Mission Or Control Name": "Control Call",
+    "ACK Code": "0x01",
+    "Description": "Wrong WayPoint Index"
+  },
+  {
+    "Mission Or Control Name": "Control Call",
+    "ACK Code": "0xD0",
+    "Description": "Not At Mode F"
+  },
+  {
+    "Mission Or Control Name": "Control Call",
+    "ACK Code": "0xD1",
+    "Description": "Need obtain control"
+  },
+  {
+    "Mission Or Control Name": "Control Call",
+    "ACK Code": "0xD2",
+    "Description": "Need close IOC mode"
+  },
+  {
+    "Mission Or Control Name": "Control Call",
+    "ACK Code": "0xD3",
+    "Description": "Mission not initialized"
+  },
+  {
+    "Mission Or Control Name": "Control Call",
+    "ACK Code": "0xD4",
+    "Description": "Mission not running"
+  },
+  {
+    "Mission Or Control Name": "Control Call",
+    "ACK Code": "0xD5",
+    "Description": "Mission already running"
+  },
+  {
+    "Mission Or Control Name": "Control Call",
+    "ACK Code": "0xD6",
+    "Description": "Too consuming of time"
+  },
+  {
+    "Mission Or Control Name": "Control Call",
+    "ACK Code": "0xD7",
+    "Description": "Other mission running"
+  },
+  {
+    "Mission Or Control Name": "Control Call",
+    "ACK Code": "0xD8",
+    "Description": "Bad GPS"
+  },
+  {
+    "Mission Or Control Name": "Control Call",
+    "ACK Code": "0xD9",
+    "Description": "Low battery"
+  },
+  {
+    "Mission Or Control Name": "Control Call",
+    "ACK Code": "0xDA",
+    "Description": "UAV did not take off"
+  },
+  {
+    "Mission Or Control Name": "Control Call",
+    "ACK Code": "0xDB",
+    "Description": "Wrong patameters"
+  },
+  {
+    "Mission Or Control Name": "Control Call",
+    "ACK Code": "0xDC",
+    "Description": "Conditions not satisfied"
+  },
+  {
+    "Mission Or Control Name": "Control Call",
+    "ACK Code": "0xDD",
+    "Description": "Crossing No-Fly zone"
+  },
+  {
+    "Mission Or Control Name": "Control Call",
+    "ACK Code": "0xDE",
+    "Description": "Unrecorded Home"
+  },
+  {
+    "Mission Or Control Name": "Control Call",
+    "ACK Code": "0xDF",
+    "Description": "Already at No-Fly zone"
+  },
+  {
+    "Mission Or Control Name": "Control Call",
+    "ACK Code": "0xC0",
+    "Description": "Too High"
+  },
+  {
+    "Mission Or Control Name": "Control Call",
+    "ACK Code": "0xC1",
+    "Description": "Too Low"
+  },
+  {
+    "Mission Or Control Name": "Control Call",
+    "ACK Code": "0xC7",
+    "Description": "Too far from home"
+  },
+  {
+    "Mission Or Control Name": "Control Call",
+    "ACK Code": "0xC8",
+    "Description": "Mission not supported"
+  },
+  {
+    "Mission Or Control Name": "Control Call",
+    "ACK Code": "0xC9",
+    "Description": "Too far from current position"
+  },
+  {
+    "Mission Or Control Name": "Control Call",
+    "ACK Code": "0xCA",
+    "Description": "Beginner mode does not support missions"
+  },
+  {
+    "Mission Or Control Name": "Control Call",
+    "ACK Code": "0xF0",
+    "Description": "Taking off"
+  },
+  {
+    "Mission Or Control Name": "Control Call",
+    "ACK Code": "0xF1",
+    "Description": "Landing"
+  },
+  {
+    "Mission Or Control Name": "Control Call",
+    "ACK Code": "0xF2",
+    "Description": "Returning home"
+  },
+  {
+    "Mission Or Control Name": "Control Call",
+    "ACK Code": "0xF3",
+    "Description": "Starting motors"
+  },
+  {
+    "Mission Or Control Name": "Control Call",
+    "ACK Code": "0xF4",
+    "Description": "Invalid command"
+  },
+  {
+    "Mission Or Control Name": "Control Call",
+    "ACK Code": "0xFF",
+    "Description": "Unknown error"
+  },
+  {
+    "Mission Or Control Name": "Follow",
+    "ACK Code": "0xB0",
+    "Description": "Too far from your position, lack of radio connection"
+  },
+  {
+    "Mission Or Control Name": "Follow",
+    "ACK Code": "0xB1",
+    "Description": "Cutoff time overflow"
+  },
+  {
+    "Mission Or Control Name": "Follow",
+    "ACK Code": "0xB2",
+    "Description": "Gimbal pitch angle too large"
+  },
+  {
+    "Mission Or Control Name": "HotPoint",
+    "ACK Code": "0xC2",
+    "Description": "Invalid radius"
+  },
+  {
+    "Mission Or Control Name": "HotPoint",
+    "ACK Code": "0xC3",
+    "Description": "yawRate too large"
+  },
+  {
+    "Mission Or Control Name": "HotPoint",
+    "ACK Code": "0xC4",
+    "Description": "Invalid vision"
+  },
+  {
+    "Mission Or Control Name": "HotPoint",
+    "ACK Code": "0xC5",
+    "Description": "Invalid yaw mode"
+  },
+  {
+    "Mission Or Control Name": "HotPoint",
+    "ACK Code": "0xC6",
+    "Description": "Too far from HotPoint"
+  },
+  {
+    "Mission Or Control Name": "HotPoint",
+    "ACK Code": "0xC6",
+    "Description": "Too far from HotPoint"
+  },
+  {
+    "Mission Or Control Name": "HotPoint",
+    "ACK Code": "0xC6",
+    "Description": "Too far from HotPoint"
+  },
+  {
+    "Mission Or Control Name": "HotPoint",
+    "ACK Code": "0xA2",
+    "Description": "Invalid HotPoint parameter"
+  },
+  {
+    "Mission Or Control Name": "HotPoint",
+    "ACK Code": "0xA3",
+    "Description": "Invalid latitude or longtitude"
+  },
+  {
+    "Mission Or Control Name": "HotPoint",
+    "ACK Code": "0xA6",
+    "Description": "Invalid direction"
+  },
+  {
+    "Mission Or Control Name": "HotPoint",
+    "ACK Code": "0xA9",
+    "Description": "HotPoint paused"
+  },
+  {
+    "Mission Or Control Name": "HotPoint",
+    "ACK Code": "0xAA",
+    "Description": "HotPoint failed to pause"
+  },
+  {
+    "Mission Or Control Name": "WayPoint",
+    "ACK Code": "0xE0",
+    "Description": "Invalid waypoint mission data"
+  },
+  {
+    "Mission Or Control Name": "WayPoint",
+    "ACK Code": "0xE1",
+    "Description": "Invalid waypoint point data"
+  },
+  {
+    "Mission Or Control Name": "WayPoint",
+    "ACK Code": "0xE2",
+    "Description": "WayPoint distance out of range"
+  },
+  {
+    "Mission Or Control Name": "WayPoint",
+    "ACK Code": "0xE3",
+    "Description": "WayPoint mission out of range"
+  },
+  {
+    "Mission Or Control Name": "WayPoint",
+    "ACK Code": "0xE4",
+    "Description": "Too many points"
+  },
+  {
+    "Mission Or Control Name": "WayPoint",
+    "ACK Code": "0xE5",
+    "Description": "Points too close"
+  },
+  {
+    "Mission Or Control Name": "WayPoint",
+    "ACK Code": "0xE6",
+    "Description": "Points too far"
+  },
+  {
+    "Mission Or Control Name": "WayPoint",
+    "ACK Code": "0xE7",
+    "Description": "Check failed"
+  },
+  {
+    "Mission Or Control Name": "WayPoint",
+    "ACK Code": "0xE8",
+    "Description": "Invalid action"
+  },
+  {
+    "Mission Or Control Name": "WayPoint",
+    "ACK Code": "0xE9",
+    "Description": "Point data not enough"
+  },
+  {
+    "Mission Or Control Name": "WayPoint",
+    "ACK Code": "0xEA",
+    "Description": "WayPoint mission data not enough"
+  },
+  {
+    "Mission Or Control Name": "WayPoint",
+    "ACK Code": "0xEB",
+    "Description": "WayPoints not enough"
+  },
+  {
+    "Mission Or Control Name": "WayPoint",
+    "ACK Code": "0xEC",
+    "Description": "WayPoint mission already running"
+  },
+  {
+    "Mission Or Control Name": "WayPoint",
+    "ACK Code": "0xED",
+    "Description": "WayPoint mission is not running"
+  },
+  {
+    "Mission Or Control Name": "WayPoint",
+    "ACK Code": "0xEE",
+    "Description": "Invalid velocity"
+  },
+  {
+    "Mission Or Control Name": "IOC",
+    "ACK Code": "0xA0",
+    "Description": "Too near to home"
+  },
+  {
+    "Mission Or Control Name": "IOC",
+    "ACK Code": "0xA1",
+    "Description": "Too close to home, within 20 meters"
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "192.168.1.31:34568": {
+    "id": "192.168.1.31:34568",
+    "absHeight": 40,
+    "corridorPoint": {
+      "longitude": 35.05672836303711,
+      "latitude": 32.6326904296875
+    },
+    "landingType": "accurate",
+    "isAGL": true,
+    "takeoffASLHeight": 232,
+    "homeLocation": {
+      "longitude": 35.05672836303711,
+      "latitude": 32.6326904296875,
+      "altitude": 68.08999633789062
+    },
+    "horizontalSpeed": 0.5,
+    "accurateMaxTolerance": 1,
+    "minAltitudeTolerance": 1,
+    "verticalSpeed": -0.5,
+    "altOffset": 0,
+    "startAltForAccurateLanding": 15,
+    "minAltForAccurateLanding": 5,
+    "maxVerticalSpeed": -2
+  },
+  "15.237.112.16:34568": {
+    "id": "15.237.112.16:34568",
+    "absHeight": 40,
+    "corridorPoint": {
+      "longitude": 35.0493899,
+      "latitude": 32.6340299
+    },
+    "landingType": "accurate",
+    "isAGL": true,
+    "takeoffASLHeight": 201,
+    "homeLocation": {
+      "longitude": 35.0493899,
+      "latitude": 32.6340299,
+      "altitude": 487.9980163574219
+    },
+    "horizontalSpeed": 0.5,
+    "accurateMaxTolerance": 1,
+    "minAltitudeTolerance": 1,
+    "verticalSpeed": -0.5,
+    "altOffset": 0,
+    "startAltForAccurateLanding": 15,
+    "minAltForAccurateLanding": 5,
+    "maxVerticalSpeed": -2
+  }
+}

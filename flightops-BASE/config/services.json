@@ -1,0 +1,357 @@
+{
+  "DTMS": {
+    "port": "9999",
+    "host": "52.56.202.148",
+    "protocol": "http",
+    "resolution": 200
+  },
+  "UTM_display_ws": {
+    "port": "8800",
+    "host": "localhost",
+    "protocol": "http",
+    "resolution": 200
+  },
+  "logService": {
+    "port": "7722",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "RTS": {
+    "port": "3456",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "RTS_RECEIVER": {
+    "port": "8771",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "AMS4D": {
+    "port": "8742",
+    "host": "localhost",
+    "protocol": "http",
+    "cartographicListeners": [
+      "webService",
+      "UTMS"
+    ],
+    "matrixListeners": [
+      "RS4D",
+      "UTMS"
+    ]
+  },
+  "RTS_SENDER": {
+    "port": "8770",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "ALS": {
+    "port": "8760",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "MAPI": {
+    "port": "7760",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "RNS": {
+    "port": "4567",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "UTMG": {
+    "port": "7750",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "SAS": {
+    "port": "1998",
+    "host": "35.152.40.89",
+    "protocol": "http"
+  },
+
+  "ExtUTMG": {
+    "port": "7755",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "SUTMG": {
+    "port": "7710",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "UTM_DISPLAY_UTMG": {
+    "port": "8700",
+    "host": "localhost",
+    "protocol": "https"
+  },
+  "JWTAuth": {
+    "port": "7888",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "SSG": {
+    "port": "7761",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "ER7": {
+    "port": "7766",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "SGG": {
+    "port": "7761",
+    "host": "localhost",
+    "protocol": "http"
+  },
+
+  "ROCK7_ONBOARD_PY": {
+    "udp": {
+      "port": "5001",
+      "host": "localhost"
+    },
+    "rest": {
+      "port": "5000",
+      "host": "localhost",
+      "protocol": "http"
+    }
+  },
+  "rock7handler": {
+    "port": "7762",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "ESSG": {
+    "host": "core.rock7.com/rockblock/MT",
+    "protocol": "https"
+  },
+  "DCS": {
+    "port": "7765",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "SAG": {
+    "port": "7763",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "AMS": {
+    "port": "8740",
+    "host": "localhost",
+    "protocol": "http",
+    "cartographicListeners": [
+      "webService",
+      "MAPI"
+    ],
+    "matrixListeners": [
+      "routeService",
+      "webService",
+      "droneService"
+    ],
+    "listenersMatrixAndCartographic": [
+      "routeService"
+    ]
+  },
+  "OB": {
+    "port": "7705",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "DBS": {
+    "port": "7741",
+    "host": "localhost",
+    "protocol": "http",
+    "listeners": [],
+    "mongo": {
+      "db": "dbs",
+      "url": "mongodb://localhost:27017/",
+      "col": "col"
+    }
+  },
+  "routeService": {
+    "port": "7730",
+    "host": "localhost",
+    "protocol": "http",
+    "defaultMaxLegLength": 10000,
+    "defaultLastLegLength": 1000
+  },
+  "videoService": {
+    "port": "7721",
+    "host": "localhost",
+    "protocol": "http",
+    "videoPort": 8701,
+    "videoRoom": "ws_imageData"
+  },
+  "UI": {
+    "port": "7702",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "gimbalService": {
+    "port": "7720",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "PWS": {
+    "protocol": "http",
+    "host": "192.168.1.43",
+    "port": "7706",
+    "websocketOutTimeInterval": 1000
+  },
+  "EntityService": {
+    "port": "4602",
+    "host": "localhost",
+    "protocol": "http",
+    "schemas": {
+      "entity": "../../../../../../schemas/Repository Ent/Graphic Overlays/repGraphicOverlay.v1.json"
+    },
+    "routes": {
+      "insert": "/insertNewGraphicOverlay",
+      "update": "/updateGraphicOverlay",
+      "getLast": "/getLastGraphicOverlays/:currentVersion",
+      "delete": "/deleteGraphicOverlay/:id"
+    },
+    "entityArrKey": "graphicOverlays"
+  },
+  "external_ws": {
+    "port": "8000",
+    "host": "localhost",
+    "protocol": "http",
+    "timeOutREST": 10000,
+    "secret": "4sekgq3sns4l0dj9kmgukn",
+    "expireIn": 86400,
+    "name": "simplex",
+    "password": "simplex",
+    "id": "respondroneid",
+    "chatPassword": "simplex123"
+  },
+  "onBoardNodeJsService": {
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "onBoardWinchService": {
+    "port": "7719",
+    "protocol": "http"
+  },
+  "onBoardLedService": {
+    "port": "7708",
+    "protocol": "http"
+  },
+  "geoServer": {
+    "port": "7080",
+    "protocol": "http",
+    "host": "34.208.95.100"
+  },
+  "logServer": {
+    "port": "7704",
+    "host": "localhost",
+    "protocol": "http",
+    "room": "logRoom",
+    "mongo": {
+      "db": "",
+      "url": "mongodb://localhost:27017/",
+      "col": "logs"
+    }
+  },
+  "logServerAlpha": {
+    "port": "7704"
+  },
+  "logServerPX4": {
+    "port": "7714"
+  },
+  "logServerDji": {
+    "protocol": "http",
+    "port": "7714"
+  },
+  "droneService": {
+    "port": "7700",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "websocketRooms": {
+    "port": "7702",
+    "host": "localhost",
+    "protocol": "http",
+    "rooms": [
+      "SystemTelemetry",
+      "DronesTelemetry",
+      "SensorsTelemetry",
+      "Targets"
+    ]
+  },
+  "webService": {
+    "port": "7701",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "UTMS": {
+    "protocol": "https",
+    "host": "az-utm2-backend.oa.r.appspot.com",
+    "OLD_host": "az-utm-backend.oa.r.appspot.com",
+    "port": ""
+  },
+  "UTM_intenral": {
+    "room": "utm_telemtry_repository",
+    "protocol": "http",
+    "host": "localhost",
+    "port": "3456"
+  },
+  "LDBS": {
+    "port": "8809",
+    "host": "localhost",
+    "protocol": "http",
+    "listeners": [],
+    "mongo": {
+      "db": "LDBS",
+      "url": "mongodb://localhost:27017/",
+      "col": "col"
+    }
+  },
+  "SMS": {
+    "port": "7801",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "SMM": {
+    "port": "8801",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "SMM_LDBS": {
+    "port": "8804",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "CMS": {
+    "port": "3000",
+    "host": "localhost",
+    "protocol": "http"
+  },
+  "POWG": {
+    "port": "7715",
+    "host": "localhost",
+    "host1": "10.10.12.130",
+    "protocol": "http"
+  },
+  "VolatusCanopyService": {
+    "protocol": "http",
+    "host": "10.10.12.28",
+    "port": "8087"
+  },
+  "AUG_service": {
+    "protocol": "https",
+    "host": "auth.flightops.io",
+    "port": "11115"
+  },
+  "ELSG": {
+    "port": "7716",
+    "protocol": "http",
+    "host": "localhost"
+  },
+  "siteAgent": {
+    "port": "11112",
+    "protocol": "http",
+    "host": "localhost"
+  }
+}

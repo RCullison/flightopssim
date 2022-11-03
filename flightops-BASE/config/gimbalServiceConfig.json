@@ -1,0 +1,43 @@
+{
+  "isUseAGCS": false,
+  "websocketRooms": [
+    "gimbalService_ws"
+  ],
+  "websocketRoomsObj": {
+    "gimbalService_ws": "gimbalService_ws"
+  },
+  "ThirdEyeDataPort": 2230,
+  "SendTelemetryInterval": 1000,
+  "joystickInterval": 1000,
+  "thirdEyeConstants": {
+    "maxVelocityPitch": 5,
+    "maxVelocityYaw": 20
+  },
+  "roninConstants": {
+    "yaw180": -88,
+    "pitchMin": -88,
+    "pitchMax": 45,
+    "yawCoefficient": 1,
+    "pitchCoefficient": 1,
+    "maxVelocityPitch": 5,
+    "maxVelocityYaw": 20
+  },
+  "djiConstants": {
+    "yaw180": -88,
+    "pitchMin": -90,
+    "pitchMax": 30,
+    "yawCoefficient": 1,
+    "pitchCoefficient": 1,
+    "maxVelocityPitch": 5,
+    "maxVelocityYaw": 20
+  },
+  "igConstants": {
+    "yaw180": -88,
+    "pitchMin": -88,
+    "pitchMax": 45,
+    "yawCoefficient": 1,
+    "pitchCoefficient": 1,
+    "maxVelocityPitch": 5,
+    "maxVelocityYaw": 20
+  }
+}

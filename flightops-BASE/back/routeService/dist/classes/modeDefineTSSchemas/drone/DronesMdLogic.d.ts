@@ -1,0 +1,33 @@
+import { AirVehicle } from '../../dataClasses/airVehicle/airVehicle';
+import { IModeDefine } from '../IModeDefine';
+export declare class DronesMdLogic implements IModeDefine {
+    constructor();
+    validate(drone: AirVehicle): any;
+    private droneIconColorLogic;
+    private droneIconPngLogic;
+    private droneIconBackgroundColorLogic;
+    private gpsColorLogic;
+    private energyColorLogic;
+    private actionDataLogic;
+    private missionLineColorLogic;
+    private buttonIconLogic;
+    private buttonTextLogic;
+    private buttonUnAllocateIconLogic;
+    private buttonUnAllocateTextLogic;
+    private unAllocateActionButtonEnableLogic;
+    private typeIcon;
+    private externalOwner;
+    private onBoardColorLogic;
+    private flytbaseColorLogic;
+    private networkColorLogic;
+    private externalLocationColor;
+    private wayPointsActionTextLogic;
+    private wayPointsActionButtonEnableLogic;
+    private wayPointsActionIconLogic;
+    private releaseTaskTextLogic;
+    private releaseTaskButtonEnableLogic;
+    private borderStyle;
+    private borderIconStyle;
+    private routeLineColor;
+    private routeLineWidth;
+}

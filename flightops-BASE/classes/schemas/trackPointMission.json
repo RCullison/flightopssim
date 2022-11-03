@@ -1,0 +1,108 @@
+{
+  "title": "TRACK_POINT_MISSION",
+  "type": "object",
+  "description": "The Track Point Mission parameters",
+  "examples": [
+    {
+      "trackPointLocation": {
+        "latitude": 34.81,
+        "longitude": 32.161,
+        "altitude": 50
+      },
+      "name": "string",
+      "distanceFromTrackPoint": 0,
+      "trackPointAGL": 0,
+      "setAngleToTarget": true,
+      "angleToTrackPoint": 0,
+      "isAGLFlight": true,
+      "missionAGL": 0,
+      "droneHeadingTypeAtLastRoutePoint": 0,
+      "headingAtLastRoutePoint": "ToGimbal"
+    }
+  ],
+  "properties": {
+    "trackPointLocation": {
+      "title": "GEOPOINT3D",
+      "type": "object",
+      "description": "Lat lon and altitude of point ASL",
+      "properties": {
+        "latitude": {
+          "type": "number",
+          "example": 34.81,
+          "minimum": -90,
+          "maximum": 90
+        },
+        "longitude": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180,
+          "example": 32.161
+        },
+        "altitude": {
+          "type": "number",
+          "example": 50,
+          "default": 0
+        }
+      },
+      "required": [
+        "latitude",
+        "longitude"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "description": "The mission name"
+    },
+    "distanceFromTrackPoint": {
+      "type": "number",
+      "description": "The minimum distance from the track point that the drone will be fly to using the mission route.\nIf it is impossible to fly to the requested point with the requested distance, the system can increase the distance.\nIf that field is not set - FlightOps will use the config default."
+    },
+    "trackPointAGL": {
+      "type": "number",
+      "description": "If the point is above the ground DTM data then the parameter will be added to the point altitude.\nDefault is 0."
+    },
+    "setAngleToTarget": {
+      "type": "boolean",
+      "description": "If true - the mission route calculation will use the angleToTrackPoint parameter.\nIf false - default configuration will be used and the drone will fly to the shortest route."
+    },
+    "angleToTrackPoint": {
+      "type": "number",
+      "title": "heading",
+      "description": "Heading data type",
+      "minimum": 0,
+      "maximum": 360
+    },
+    "isAGLFlight": {
+      "type": "boolean",
+      "description": "If AGL flight defined then the mission route will calculated according to the missionAGL field.\nIn case of false - the flight will be according to the drone operational altitude."
+    },
+    "missionAGL": {
+      "type": "number",
+      "description": "The AGL flight requested altitude.\nThe field is requiered if siAGLFlight is set to true.\n"
+    },
+    "droneHeadingTypeAtLastRoutePoint": {
+      "type": "number",
+      "title": "heading",
+      "description": "Heading data type",
+      "minimum": 0,
+      "maximum": 360
+    },
+    "headingAtLastRoutePoint": {
+      "type": "string",
+      "title": "headingType",
+      "description": "The type of heading for the drone.\nToGimbal - the drone heading will follow the gimbal yaw.\nTo Route - will head to the route last leg direction.\nSet - Manually defined",
+      "enum": [
+        "ToGimbal",
+        "ToRoute",
+        "Set"
+      ]
+    }
+  },
+  "required": [
+    "trackPointLocation",
+    "name",
+    "setAngleToTarget",
+    "isAGLFlight",
+    "droneHeadingTypeAtLastRoutePoint"
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "algorithmParams": {
+    "General": {
+      "arriveToPointTolerance": 10,
+      "reachedOperHeightTolerace": 10,
+      "minEnergy": 35,
+      "landingType": "normal",
+      "isNoGPSAvailable": true
+    },
+    "Dynamic": {
+      "arriveToPointTolerance": 10,
+      "reachedOperHeightTolerace": 10,
+      "minEnergy": 35,
+      "landingType": "normal",
+      "allocationProcess": "auto",
+      "landingPointTolerance": 15,
+      "isNoGPSAvailable": true
+    },
+    "Route": {
+      "arriveToPointTolerance": 10,
+      "reachedOperHeightTolerace": 10,
+      "minEnergy": 35,
+      "landingType": "normal",
+      "allocationProcess": "auto",
+      "landingPointTolerance": 15,
+      "isNoGPSAvailable": true
+    },
+    "Security": {
+      "reachedOperHeightTolerace": 10,
+      "minEnergy": 35,
+      "landingType": "normal",
+      "allocationProcess": "auto",
+      "landingPointTolerance": 15,
+      "isNoGPSAvailable": true
+    },
+    "Point": {
+      "arriveToPointTolerance": 10,
+      "reachedOperHeightTolerace": 10,
+      "minEnergy": 35,
+      "landingType": "normal",
+      "allocationProcess": "auto",
+      "landingPointTolerance": 15,
+      "isNoGPSAvailable": true
+    },
+    "TargetTracking": {
+      "arriveToPointTolerance": 10,
+      "reachedOperHeightTolerace": 10,
+      "minEnergy": 35,
+      "landingType": "normal",
+      "allocationProcess": "auto",
+      "landingPointTolerance": 15,
+      "isNoGPSAvailable": true,
+      "NFZ_Factor": 90,
+      "replaceDynamicNfzInterval_ms": 4000
+    },
+    "WASP": {
+      "arriveToPointTolerance": 10,
+      "reachedOperHeightTolerace": 10,
+      "minEnergy": 35,
+      "landingType": "normal",
+      "allocationProcess": "auto",
+      "landingPointTolerance": 15,
+      "isNoGPSAvailable": true
+    },
+    "Shipping": {
+      "maxDronesInMission": 1,
+      "arriveToPointTolerance": 10,
+      "reachedOperHeightTolerace": 10,
+      "minEnergy": 35,
+      "loiterRadius": 30,
+      "loiterAngularSpeed": 1,
+      "is_clockwise": 0,
+      "yaw_mode": 0,
+      "taskPriority": 30,
+      "landingType": "normal",
+      "allocationProcess": "external",
+      "shippingPointTolerance": 15,
+      "ifFlightForces": true,
+      "isNoGPSAvailable": true
+    },
+    "ShipWithoutLanding": {
+      "maxDronesInMission": 1,
+      "arriveToPointTolerance": 10,
+      "reachedOperHeightTolerace": 10,
+      "minEnergy": 35,
+      "loiterRadius": 30,
+      "loiterAngularSpeed": 1,
+      "is_clockwise": 0,
+      "yaw_mode": 0,
+      "taskPriority": 30,
+      "landingType": "normal",
+      "allocationProcess": "external",
+      "containerHeight": 2,
+      "heightAboveContainerForDrop": 2,
+      "shippingPointTolerance": 15,
+      "isNoGPSAvailable": true
+    },
+    "DeliveryPoint": {
+      "maxDronesInMission": 1,
+      "arriveToPointTolerance": 10,
+      "reachedOperHeightTolerace": 10,
+      "minEnergy": 35,
+      "loiterRadius": 30,
+      "loiterAngularSpeed": 1,
+      "is_clockwise": 0,
+      "yaw_mode": 0,
+      "taskPriority": 30,
+      "landingType": "normal",
+      "allocationProcess": "external",
+      "containerHeight": 10,
+      "heightAboveContainerForDrop": 10,
+      "shippingPointTolerance": 15,
+      "IRLockStartHeight": 15,
+      "deliveryAzimuth": 0,
+      "isNoGPSAvailable": true
+    },
+    "MultiDeploy": {
+      "maxDronesInMission": 1,
+      "arriveToPointTolerance": 10,
+      "reachedOperHeightTolerace": 10,
+      "minEnergy": 35,
+      "loiterRadius": 30,
+      "loiterAngularSpeed": 1,
+      "is_clockwise": 0,
+      "yaw_mode": 0,
+      "taskPriority": 30,
+      "landingType": "normal",
+      "allocationProcess": "auto",
+      "containerHeight": 10,
+      "heightAboveContainerForDrop": 10,
+      "shippingPointTolerance": 15,
+      "IRLockStartHeight": 15,
+      "deliveryAzimuth": 0,
+      "isNoGPSAvailable": true
+    }
+  },
+  "taskPriority": {
+    "Route": {
+      "defaultTaskPriority": 20,
+      "secondaryTaskPriority": 10
+    },
+    "WASP": {
+      "defaultTaskPriority": 40,
+      "secondaryTaskPriority": 11
+    },
+    "TargetTracking": {
+      "defaultTaskPriority": 60,
+      "secondaryTaskPriority": 12
+    },
+    "Point": {
+      "defaultTaskPriority": 70,
+      "secondaryTaskPriority": 12
+    },
+    "Dynamic": {
+      "defaultTaskPriority": 80,
+      "secondaryTaskPriority": 13
+    },
+    "Shipping": {
+      "defaultTaskPriority": 100,
+      "secondaryTaskPriority": 14
+    },
+    "ShipWithoutLanding": {
+      "defaultTaskPriority": 100,
+      "secondaryTaskPriority": 14
+    },
+    "DeliveryPoint": {
+      "defaultTaskPriority": 100,
+      "secondaryTaskPriority": 14
+    }
+  }
+}
